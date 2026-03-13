@@ -1,0 +1,6 @@
+MetaTrader5
+numpy
+pandas
+scikit-learn
+tensorflow
+python-dotenv

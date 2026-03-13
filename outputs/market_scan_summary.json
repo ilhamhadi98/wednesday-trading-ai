@@ -1,0 +1,97 @@
+{
+  "total_symbols": 55,
+  "ok_symbols": 48,
+  "buy_sell_signals": 45,
+  "top_signals": [
+    {
+      "symbol": "CADNOK",
+      "signal": "SELL",
+      "probability": 0.21624061465263367,
+      "confidence": 0.28375938534736633,
+      "spread_points": 0.0,
+      "atr_pips": 141.47346843541735,
+      "bar_time": "2026-03-12 00:00:00+00:00"
+    },
+    {
+      "symbol": "GBPNOK",
+      "signal": "SELL",
+      "probability": 0.23017269372940063,
+      "confidence": 0.26982730627059937,
+      "spread_points": 0.0,
+      "atr_pips": 248.35458939395554,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    },
+    {
+      "symbol": "AUDNOK",
+      "signal": "SELL",
+      "probability": 0.24516546726226807,
+      "confidence": 0.25483453273773193,
+      "spread_points": 0.0,
+      "atr_pips": 181.9103717717713,
+      "bar_time": "2026-03-12 00:00:00+00:00"
+    },
+    {
+      "symbol": "EURDKK",
+      "signal": "SELL",
+      "probability": 0.2468266487121582,
+      "confidence": 0.2531733512878418,
+      "spread_points": 0.0,
+      "atr_pips": 24.954278357574555,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    },
+    {
+      "symbol": "AUDSEK",
+      "signal": "SELL",
+      "probability": 0.24753688275814056,
+      "confidence": 0.25246311724185944,
+      "spread_points": 0.0,
+      "atr_pips": 137.8062459489622,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    },
+    {
+      "symbol": "GBPDKK",
+      "signal": "SELL",
+      "probability": 0.24846069514751434,
+      "confidence": 0.25153930485248566,
+      "spread_points": 0.0,
+      "atr_pips": 57.43194516281204,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    },
+    {
+      "symbol": "CHFSEK",
+      "signal": "SELL",
+      "probability": 0.24878397583961487,
+      "confidence": 0.25121602416038513,
+      "spread_points": 0.0,
+      "atr_pips": 177.9911283724108,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    },
+    {
+      "symbol": "AUDJPY",
+      "signal": "SELL",
+      "probability": 0.24791160225868225,
+      "confidence": 0.25208839774131775,
+      "spread_points": 0.999999999990564,
+      "atr_pips": 23.126752893768096,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    },
+    {
+      "symbol": "EURNOK",
+      "signal": "SELL",
+      "probability": 0.25057265162467957,
+      "confidence": 0.24942734837532043,
+      "spread_points": 0.0,
+      "atr_pips": 208.9552611937853,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    },
+    {
+      "symbol": "USDSEK",
+      "signal": "SELL",
+      "probability": 0.2508854269981384,
+      "confidence": 0.24911457300186157,
+      "spread_points": 0.9999999999621422,
+      "atr_pips": 191.25105917161585,
+      "bar_time": "2026-03-11 08:00:00+00:00"
+    }
+  ]
+}

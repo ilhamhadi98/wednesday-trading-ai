@@ -1,0 +1,28 @@
+symbol,reason
+AUDDKK,data frame terlalu pendek
+AUDHKD,data frame terlalu pendek
+AUDHUF,data frame terlalu pendek
+AUDNOK,data frame terlalu pendek
+AUDPLN,data frame terlalu pendek
+AUDTHB,Gagal ambil data range AUDTHB H1: [1] Success
+AUDZAR,Gagal ambil data range AUDZAR H1: [1] Success
+CADDKK,Gagal ambil data range CADDKK H1: [1] Success
+CADMXN,data frame terlalu pendek
+CADNOK,data frame terlalu pendek
+CADPLN,Gagal ambil data range CADPLN H1: [1] Success
+CADSEK,Gagal ambil data range CADSEK H1: [1] Success
+CHFMXN,Gagal ambil data range CHFMXN H1: [1] Success
+CHFTRY,Gagal ambil data range CHFTRY H1: [1] Success
+CHFZAR,data frame terlalu pendek
+CNHJPY,data frame terlalu pendek
+DKKJPY,Gagal ambil data range DKKJPY H1: [1] Success
+DKKNOK,Gagal ambil data range DKKNOK H1: [1] Success
+EURILS,data frame terlalu pendek
+GBPHKD,data frame terlalu pendek
+MXNJPY,data frame terlalu pendek
+NOKDKK,Gagal ambil data range NOKDKK H1: [1] Success
+NZDHUF,data frame terlalu pendek
+NZDMXN,Gagal ambil data range NZDMXN H1: [1] Success
+NZDNOK,Gagal ambil data range NZDNOK H1: [1] Success
+PLNJPY,data frame terlalu pendek
+SEKNOK,Gagal ambil data range SEKNOK H1: [1] Success
