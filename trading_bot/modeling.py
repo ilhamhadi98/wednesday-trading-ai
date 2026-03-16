@@ -114,16 +114,16 @@ def train_model(
             # We try to load weights even if it's a full model file, 
             # as it's the most flexible way to transfer learned state to a new architecture
             model.load_weights(str(MODEL_PATH))
-            print(f"✅ [Modeling] Loaded existing weights to continue learning!")
+            print(f"[OK] [Modeling] Loaded existing weights to continue learning!")
         except Exception as e:
             # If load_weights fails (e.g. it's a full model file that load_weights doesn't like), 
             # we try to load the whole model
             try:
-                temp_model = tf.keras.models.load_model(str(MODEL_PATH))
+                temp_model = tf.keras.models.load_model(str(MODEL_PATH), safe_mode=False)
                 model.set_weights(temp_model.get_weights())
-                print(f"✅ [Modeling] Loaded weights from full model file!")
+                print(f"[OK] [Modeling] Loaded weights from full model file!")
             except Exception as e2:
-                print(f"⚠️ [Modeling] Could not load weights/model: {e2}. Starting fresh.")
+                print(f"[WARN] [Modeling] Could not load weights/model: {e2}. Starting fresh.")
 
     # Hitung class_weight untuk menangani ketidakseimbangan BUY vs SELL
     n_total = len(y_train)
@@ -165,7 +165,7 @@ def train_model(
     try:
         model.save(str(MODEL_PATH))
     except Exception as e:
-        print(f"⚠️ [Modeling] Failed to save updated model: {e}")
+        print(f"[WARN] [Modeling] Failed to save updated model: {e}")
         
     return model, history.history
 
@@ -194,11 +194,21 @@ def load_artifacts() -> ModelArtifacts:
         raise FileNotFoundError(
             "Artifact model belum ditemukan. Jalankan training dulu (train_model.py)."
         )
-    model = tf.keras.models.load_model(MODEL_PATH)
     with open(SCALER_PATH, "rb") as f:
         scaler = pickle.load(f)
     with open(META_PATH, "r", encoding="utf-8") as f:
         meta = json.load(f)
+
+    try:
+        model = tf.keras.models.load_model(MODEL_PATH, safe_mode=False)
+    except Exception as e:
+        print(f"[WARN] [Modeling] Failed to load full model structure (likely Lambda shape inference error). Rebuilding and loading weights...")
+        from .config import load_settings
+        settings = load_settings()
+        input_shape = (meta["lookback"], len(meta["feature_cols"]))
+        model = build_lstm_model(input_shape, settings.learning_rate)
+        model.load_weights(MODEL_PATH)
+
     return ModelArtifacts(
         model=model,
         scaler=scaler,

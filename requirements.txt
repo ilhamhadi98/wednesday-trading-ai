@@ -4,3 +4,4 @@ pandas
 scikit-learn
 tensorflow
 python-dotenv
+ollama>=0.2.0

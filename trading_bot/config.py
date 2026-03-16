@@ -96,6 +96,14 @@ class Settings:
     poll_seconds: int
     live_sleep_seconds: int
 
+    # Ollama LLM Multi-Agent settings
+    ollama_base_url: str
+    ollama_news_model: str
+    ollama_tech_model: str
+    ollama_decision_model: str
+    ollama_enabled: bool
+    ollama_timeout: int
+
 
 def load_settings() -> Settings:
     load_dotenv(PROJECT_ROOT / ".env")
@@ -155,6 +163,13 @@ def load_settings() -> Settings:
         magic_number=_env_int("MAGIC_NUMBER", 20260311),
         poll_seconds=_env_int("POLL_SECONDS", 30),
         live_sleep_seconds=_env_int("LIVE_SLEEP_SECONDS", 10),
+        # Ollama LLM
+        ollama_base_url=os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"),
+        ollama_news_model=os.getenv("OLLAMA_NEWS_MODEL", "mistral:7b"),
+        ollama_tech_model=os.getenv("OLLAMA_TECH_MODEL", "qwen2.5:14b"),
+        ollama_decision_model=os.getenv("OLLAMA_DECISION_MODEL", "deepseek-r1:14b"),
+        ollama_enabled=_env_bool("OLLAMA_ENABLED", True),
+        ollama_timeout=_env_int("OLLAMA_TIMEOUT", 120),
     )
     return apply_risk_profile(settings)
 
