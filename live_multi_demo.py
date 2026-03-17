@@ -25,41 +25,45 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Live demo multi-symbol: scan peluang banyak simbol lalu eksekusi top sinyal."
     )
-    parser.add_argument(
-        "--top",
-        type=int,
-        default=0,
-        help="Jumlah simbol teratas (BUY/SELL) yang dieksekusi tiap siklus.",
-    )
-    parser.add_argument(
-        "--symbols",
-        type=str,
-        default="",
-        help="Daftar simbol dipisah koma. Kosong = pakai discovery mode.",
-    )
-    parser.add_argument(
-        "--once",
-        action="store_true",
-        help="Jalankan 1 siklus scan+eksekusi lalu selesai.",
-    )
-    parser.add_argument(
-        "--execute",
-        action="store_true",
-        help="Aktifkan pengiriman order ke akun demo. Default hanya scan (dry-run).",
-    )
-    parser.add_argument(
-        "--all-symbols",
-        action="store_true",
-        help="Jika aktif, scan semua simbol (bukan pair saja). Default pair-only.",
-    )
+    parser.add_argument("--top", type=int, default=0)
+    parser.add_argument("--symbols", type=str, default="")
+    parser.add_argument("--once", action="store_true")
+    parser.add_argument("--execute", action="store_true")
+    parser.add_argument("--all-symbols", action="store_true")
     args = parser.parse_args()
 
     settings = load_settings()
-    artifacts = load_artifacts()
+
+    # ── Model global: TIDAK pernah ditimpa/diubah oleh retraining ─────────────
+    global_artifacts = load_artifacts()
+
     explicit_symbols = [s.strip() for s in args.symbols.split(",") if s.strip()]
     last_seen_bar: dict[str, pd.Timestamp] = {}
     max_active = args.top if args.top > 0 else settings.max_active_pairs
     max_active = min(max_active, settings.max_active_pairs)
+
+    # Set pair yang sudah pernah di-trigger training (hindari retrain berulang)
+    first_time_trained: set[str] = set()
+
+    # Lazy import adaptive modules
+    from trading_bot.adaptive_retrain import (
+        check_and_trigger_retrain,
+        load_symbol_artifacts,
+        is_retraining,
+        _do_retrain,
+        _retraining_in_progress,
+        _lock,
+    )
+    import threading
+
+    def get_artifacts_for_symbol(symbol: str):
+        """
+        Kembalikan model terbaik untuk pair ini:
+        - Jika ada model per-symbol (hasil retraining) → pakai itu
+        - Jika tidak ada → fallback ke model global (aman, tidak berubah)
+        """
+        sym_arts = load_symbol_artifacts(symbol)
+        return sym_arts if sym_arts is not None else global_artifacts
 
     client = MT5Client(settings)
     try:
@@ -72,23 +76,92 @@ def main() -> None:
             flush=True,
         )
         print("[LIVE-MULTI] tekan CTRL+C untuk berhenti.", flush=True)
+        print("[LIVE-MULTI] Adaptive retraining AKTIF (trigger: 5 loss berturut per pair).", flush=True)
 
         while True:
             df = scan_opportunities(
                 client=client,
                 settings=settings,
-                artifacts=artifacts,
+                artifacts=global_artifacts,
                 symbols=explicit_symbols if explicit_symbols else None,
                 pair_only=not args.all_symbols,
                 fast_tf=settings.live_fast_timeframe,
                 slow_tf=settings.live_slow_timeframe,
             )
+
             if df.empty:
                 print("[LIVE-MULTI] tidak ada data scan.", flush=True)
                 if args.once:
                     break
                 time.sleep(settings.poll_seconds)
                 continue
+
+            df.to_json("outputs/live_signals.json", orient="records", indent=2)
+
+            # -- Cek trigger retraining per pair (background thread, non-blocking) --
+            for sym in df["symbol"].tolist():
+                if is_retraining(sym):
+                    continue  # sudah berjalan, skip
+
+                sym_arts = load_symbol_artifacts(sym)
+
+                # Kasus 1: Pair BARU yang belum pernah punya model khusus
+                if sym_arts is None and sym not in first_time_trained:
+                    print(
+                        f"[LIVE-MULTI] [BARU] {sym} belum ada model khusus. "
+                        "Memulai initial training di background...",
+                        flush=True,
+                    )
+                    with _lock:
+                        _retraining_in_progress.add(sym)
+                    t = threading.Thread(
+                        target=_do_retrain,
+                        args=(sym, client, settings),
+                        daemon=True,
+                        name=f"init-train-{sym}",
+                    )
+                    t.start()
+                    first_time_trained.add(sym)
+                    continue  # sudah trigger initial, skip cek loss streak
+
+                # Kasus 2: Pair yang sudah ada model, cek streak loss
+                triggered = check_and_trigger_retrain(
+                    symbol=sym,
+                    client=client,
+                    settings=settings,
+                    consecutive_loss_threshold=5,
+                )
+                if triggered:
+                    print(
+                        f"[LIVE-MULTI] [RETRAIN] {sym} sedang dilatih ulang di background. "
+                        "Pair lain TIDAK terpengaruh.",
+                        flush=True,
+                    )
+
+
+            # ── Re-evaluasi sinyal menggunakan model terbaik per pair ─────────
+            for idx, row in df.iterrows():
+                sym = str(row["symbol"])
+                if row["status"] != "OK":
+                    continue
+                sym_arts = get_artifacts_for_symbol(sym)
+                if sym_arts is not global_artifacts:
+                    # Pair ini sudah memiliki model khusus hasil retraining
+                    try:
+                        from trading_bot.market_scan import evaluate_symbol
+                        updated = evaluate_symbol(
+                            client=client,
+                            settings=settings,
+                            artifacts=sym_arts,
+                            symbol=sym,
+                            fast_tf=settings.live_fast_timeframe,
+                            slow_tf=settings.live_slow_timeframe,
+                        )
+                        df.at[idx, "signal"] = updated.signal
+                        df.at[idx, "probability"] = updated.probability
+                        df.at[idx, "confidence"] = updated.confidence
+                    except Exception:
+                        pass  # fallback tetap pakai sinyal dari global model
 
             actionable = df[
                 (df["status"] == "OK") & (df["signal"].isin(["BUY", "SELL"]))
@@ -107,10 +180,10 @@ def main() -> None:
             active_symbols = {p.symbol for p in active_positions}
             if len(active_symbols) > max_active:
                 print(
-                    f"[LIVE-MULTI] peringatan: posisi aktif saat ini {len(active_symbols)} > limit {max_active}. "
-                    "Tidak akan menambah posisi baru sampai jumlah turun.",
+                    f"[LIVE-MULTI] peringatan: posisi aktif {len(active_symbols)} > limit {max_active}.",
                     flush=True,
                 )
+
             for _, row in actionable.iterrows():
                 symbol = str(row["symbol"])
                 bar_time = pd.Timestamp(row["bar_time"])
@@ -119,10 +192,15 @@ def main() -> None:
 
                 signal = signal_to_int(str(row["signal"]))
                 symbol_settings = replace(settings, symbol=symbol)
+
+                # Tampilkan tag model yang dipakai untuk pair ini
+                arts = get_artifacts_for_symbol(symbol)
+                model_tag = f"per-symbol" if arts is not global_artifacts else "global"
+
                 if args.execute:
                     if signal != 0 and symbol not in active_symbols and len(active_symbols) >= max_active:
                         print(
-                            f"[LIVE-MULTI] symbol={symbol} dilewati karena limit posisi aktif {max_active} sudah penuh.",
+                            f"[LIVE-MULTI] {symbol} skip: limit {max_active} posisi aktif sudah penuh.",
                             flush=True,
                         )
                         last_seen_bar[symbol] = bar_time
@@ -134,7 +212,7 @@ def main() -> None:
                     print(
                         f"[LIVE-MULTI] symbol={symbol} bar={bar_time} "
                         f"signal={row['signal']} prob={row['probability']:.4f} "
-                        f"ok={action.ok} msg={action.message}",
+                        f"model=[{model_tag}] ok={action.ok} msg={action.message}",
                         flush=True,
                     )
                     if action.ok and "open" in action.message.lower():
@@ -143,7 +221,7 @@ def main() -> None:
                     print(
                         f"[LIVE-MULTI][DRY-RUN] symbol={symbol} bar={bar_time} "
                         f"signal={row['signal']} prob={row['probability']:.4f} "
-                        "aksi tidak dikirim",
+                        f"model=[{model_tag}] aksi tidak dikirim",
                         flush=True,
                     )
                 last_seen_bar[symbol] = bar_time
