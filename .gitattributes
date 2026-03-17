@@ -1,0 +1,6 @@
+# Gitattributes untuk memberitahu Git file mana yang binary
+*.keras binary
+*.pkl binary
+*.h5 binary
+*.sqlite binary
+*.db binary
