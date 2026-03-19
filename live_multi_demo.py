@@ -11,7 +11,7 @@ from trading_bot.execution import DemoExecutor
 from trading_bot.market_scan import scan_opportunities
 from trading_bot.modeling import load_artifacts
 from trading_bot.mt5_client import MT5Client
-
+from trading_bot.position_manager import manage_open_positions
 
 def signal_to_int(label: str) -> int:
     if label == "BUY":
@@ -97,6 +97,9 @@ def main() -> None:
                 continue
 
             df.to_json("outputs/live_signals.json", orient="records", indent=2)
+
+            # ── Manajemen Posisi Aktif (Trailing Stop & Scalping AI) ──────────
+            manage_open_positions(client, df, settings)
 
             # -- Cek trigger retraining per pair (background thread, non-blocking) --
             for sym in df["symbol"].tolist():
