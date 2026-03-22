@@ -2,6 +2,7 @@ import argparse
 import time
 import threading
 from dataclasses import replace
+from pathlib import Path
 import pandas as pd
 from datetime import datetime, timezone
 
@@ -25,6 +26,13 @@ except Exception:
     def notify_training_done(*a, **kw): pass
     def notify_quota_full(*a, **kw): pass
     def notify_error(*a, **kw): pass
+
+# ── Auto leaderboard updater ────────────────────────────────────
+from trading_bot.auto_leaderboard import (
+    spawn_leaderboard_update,
+    should_update_today,
+    is_leaderboard_updating,
+)
 
 from trading_bot.config import load_settings, OUTPUT_DIR
 from trading_bot.execution import DemoExecutor
@@ -78,6 +86,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--top", type=int, default=10, help="Ambil Top N pair dari Leaderboard")
     parser.add_argument("--execute", action="store_true", help="Kirim order ke MT5")
+    parser.add_argument(
+        "--symbols", type=str, default="",
+        help="Daftar simbol dipisah koma untuk auto-leaderboard backtest. "
+             "Kosong = pakai leaderboard saat ini."
+    )
     args = parser.parse_args()
 
     settings = load_settings()
@@ -111,6 +124,22 @@ def main():
     _open_positions_meta: dict = {}   # ticket -> {symbol, signal, entry, sl, tp, lot, entry_time}
     _last_session: str = ""           # untuk deteksi pergantian sesi
 
+    # Tentukan symbol list untuk auto-leaderboard
+    _last_sym_path = Path("outputs/.last_symbols.txt")
+    if args.symbols:
+        # User memberi --symbols saat startup → simpan ke file
+        _all_backtest_symbols = [s.strip() for s in args.symbols.split(",") if s.strip()]
+        _last_sym_path.write_text(",".join(_all_backtest_symbols), encoding="utf-8")
+        print(f"[AUTO-LB] Symbols disimpan: {len(_all_backtest_symbols)} pair")
+    elif _last_sym_path.exists():
+        # Gunakan symbols dari run backtest terakhir
+        _all_backtest_symbols = [s.strip() for s in _last_sym_path.read_text().split(",") if s.strip()]
+        print(f"[AUTO-LB] Symbols dimuat dari cache: {len(_all_backtest_symbols)} pair")
+    else:
+        # Fallback ke leaderboard saat ini
+        _all_backtest_symbols = list(best_pairs)
+        print(f"[AUTO-LB] Symbols fallback ke leaderboard: {_all_backtest_symbols}")
+
     try:
         client.connect()
 
@@ -141,6 +170,58 @@ def main():
                         notify_session_change("OFF", best_pairs)
                     except Exception: pass
                 _last_session = "OFF"
+
+                # ── Auto Leaderboard Update (1x per hari, di background) ──
+                if should_update_today() and not is_leaderboard_updating():
+                    old_pairs = list(best_pairs)
+                    print("[AUTO-LB] Memulai auto-update leaderboard off-session...")
+
+                    def _on_lb_done(new_pairs: list, _old=old_pairs):
+                        nonlocal best_pairs
+                        if new_pairs:
+                            # Paksa XAUUSD & XAGUSD tetap masuk
+                            for gs in ["XAUUSD", "XAGUSD"]:
+                                if gs not in new_pairs:
+                                    new_pairs.append(gs)
+                            best_pairs = new_pairs
+                            print(f"[AUTO-LB] ✅ Leaderboard diperbarui: {best_pairs}")
+                            # — Telegram notif leaderboard update
+                            if _TG_ENABLED:
+                                try:
+                                    added   = [str(p) for p in new_pairs if p not in _old]
+                                    removed = [str(p) for p in _old if p not in new_pairs]
+                                    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+                                    lines = [
+                                        "<b>🔄 LEADERBOARD DIPERBARUI</b>",
+                                        "━━━━━━━━━━━━━━━━━━",
+                                        f"🕐 Waktu      : {now}",
+                                        f"📊 Pair aktif : {len(new_pairs)}",
+                                    ]
+                                    if added:
+                                        lines.append(f"🆕 Masuk  : {', '.join(added)}")
+                                    if removed:
+                                        lines.append(f"🗑️ Keluar : {', '.join(removed)}")
+                                    if not added and not removed:
+                                        lines.append("ℹ️ Pair tidak berubah")
+                                    lines.append(f"📋 Top pair: {', '.join(str(p) for p in new_pairs[:10])}")
+                                    lines.append("━━━━━━━━━━━━━━━━━━")
+                                    from trading_bot.telegram_notify import _send_message
+                                    _send_message("\n".join(lines))
+                                except Exception as _te:
+                                    print(f"[TG] leaderboard-notify error: {_te}")
+                        else:
+                            print("[AUTO-LB] ⚠️ Backtest baru tidak menghasilkan pair valid, leaderboard tidak diganti.")
+
+                    spawn_leaderboard_update(
+                        client=client,
+                        settings=settings,
+                        symbols=_all_backtest_symbols,
+                        top_n=args.top,
+                        csv_path=csv_path,
+                        epochs=5,            # lebih cepat dari manual (10 epoch)
+                        train_ratio=0.7,
+                        on_done=_on_lb_done,
+                    )
 
                 # Biarkan AI berlatih (Transfer Learning) pada pair andalannya
                 for sym in best_pairs:
