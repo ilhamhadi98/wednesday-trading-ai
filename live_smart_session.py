@@ -5,6 +5,15 @@ from dataclasses import replace
 import pandas as pd
 from datetime import datetime, timezone
 
+# ── Telegram notifications (non-blocking, aman jika gagal) ──────────────────
+try:
+    from trading_bot.telegram_notify import notify_signal, notify_trade_close
+    _TG_ENABLED = True
+except Exception:
+    _TG_ENABLED = False
+    def notify_signal(*a, **kw): pass
+    def notify_trade_close(*a, **kw): pass
+
 from trading_bot.config import load_settings, OUTPUT_DIR
 from trading_bot.execution import DemoExecutor
 from trading_bot.market_scan import scan_opportunities
@@ -18,6 +27,19 @@ from trading_bot.adaptive_retrain import (
     _lock
 )
 
+def write_live_state(session: str, monitoring: list, logs: str):
+    import json
+    try:
+        from trading_bot.adaptive_retrain import _retraining_in_progress
+        with open("outputs/live_state.json", "w") as f:
+            json.dump({
+                "session": session,
+                "monitoring": monitoring,
+                "training": list(_retraining_in_progress),
+                "logs": [logs]
+            }, f)
+    except: pass
+    
 def signal_to_int(label: str) -> int:
     return 1 if label == "BUY" else -1 if label == "SELL" else 0
 
@@ -71,15 +93,19 @@ def main():
     print(f"[SESI TRADING]: 08:00 UTC - 21:00 UTC (London & New York)")
     print("=======================================================\n")
 
-    last_seen_bar = {}
-    first_time_trained = set()
+    last_seen_bar        = {}
+    first_time_trained   = set()
+    # Tracking posisi terbuka untuk deteksi close
+    _open_positions_meta: dict = {}   # ticket -> {symbol, signal, entry, sl, tp, lot, entry_time, price_data}
 
     try:
         client.connect()
         while True:
             # Skenario 1: Di Luar Jam Trading (Sesi Asia / Sepi)
             if not is_trading_session():
-                print(f"[{datetime.now(timezone.utc).strftime('%H:%M UTC')}] Di luar sesi aktif. AI masuk mode TRAINING & MONITORING...")
+                msg = f"[{datetime.now(timezone.utc).strftime('%H:%M UTC')}] Di luar sesi aktif. AI masuk mode TRAINING & MONITORING..."
+                print(msg)
+                write_live_state("Off-Session (Training)", best_pairs, msg)
                 
                 # Biarkan AI berlatih (Transfer Learning) pada pair andalannya agar besok lebih pintar
                 for sym in best_pairs:
@@ -102,7 +128,9 @@ def main():
                 continue
 
             # Skenario 2: Di Dalam Jam Trading (Sesi London & NY)
-            print(f"[{datetime.now(timezone.utc).strftime('%H:%M UTC')}] Market Sesion Aktif! AI melakukan scanning ketat...")
+            msg = f"[{datetime.now(timezone.utc).strftime('%H:%M UTC')}] Market Sesion Aktif! AI melakukan scanning ketat..."
+            print(msg)
+            write_live_state("Active-Session (Trading)", best_pairs, msg)
             
             df = scan_opportunities(
                 client=client,
@@ -143,7 +171,37 @@ def main():
                 continue
 
             active_positions = [p for p in client.positions_all() if p.magic == settings.magic_number]
-            active_symbols = {p.symbol for p in active_positions}
+            active_symbols   = {p.symbol for p in active_positions}
+            active_tickets   = {p.ticket for p in active_positions}
+
+            # ── Deteksi posisi yang baru CLOSE (ada di meta tapi tidak lagi di MT5) ──
+            if _TG_ENABLED and args.execute:
+                for ticket, meta in list(_open_positions_meta.items()):
+                    if ticket not in active_tickets:
+                        try:
+                            # Ambil data harga untuk chart
+                            raw_df = client.get_ohlcv(
+                                meta["symbol"], settings.live_fast_timeframe, n=120
+                            ) if hasattr(client, "get_ohlcv") else None
+                            acct    = client.account_info()
+                            balance = acct.balance if acct else 0.0
+                            # Estimasi close price dari harga current (tidak ada history deal di sini)
+                            sym_info = client.symbol_spec(meta["symbol"])
+                            close_p  = sym_info.bid if meta["signal"] == "BUY" else sym_info.ask
+                            pnl_est  = (close_p - meta["entry"]) * (1 if meta["signal"] == "BUY" else -1) \
+                                       * meta["lot"] * (sym_info.trade_contract_size if hasattr(sym_info, "trade_contract_size") else 100000)
+                            notify_trade_close(
+                                symbol=meta["symbol"], signal=meta["signal"],
+                                entry_price=meta["entry"], close_price=close_p,
+                                sl=meta["sl"], tp=meta["tp"], lot=meta["lot"],
+                                pnl=pnl_est, balance=balance, reason="CLOSED",
+                                entry_time=meta["entry_time"],
+                                close_time=datetime.now(timezone.utc),
+                                price_data=raw_df,
+                            )
+                        except Exception as _ex:
+                            print(f"[TG] close-notify error: {_ex}")
+                        del _open_positions_meta[ticket]
 
             for _, row in actionable.iterrows():
                 symbol = str(row["symbol"])
@@ -162,17 +220,48 @@ def main():
                         last_seen_bar[symbol] = bar_time
                         continue
 
-                    spec = client.symbol_spec(symbol)
+                    spec     = client.symbol_spec(symbol)
                     executor = DemoExecutor(client, symbol_settings, spec)
-                    action = executor.handle_signal(signal)
+                    action   = executor.handle_signal(signal)
                     print(f"    🎯 {symbol} | Sinyal: {row['signal']} | Prob: {row['probability']:.2f} | Adaptive: {is_adaptive} | Aksi: {action.message}")
+
                     if action.ok and "open" in action.message.lower():
                         active_symbols.add(symbol)
+                        # ── Telegram: kirim signal baru ──────────────────────
+                        if _TG_ENABLED:
+                            try:
+                                acct    = client.account_info()
+                                balance = acct.balance if acct else 0.0
+                                # Cari ticket baru yang baru saja dibuka
+                                new_pos = [p for p in client.positions_all()
+                                           if p.symbol == symbol and p.magic == settings.magic_number]
+                                if new_pos:
+                                    p0 = new_pos[0]
+                                    notify_signal(
+                                        symbol=symbol,
+                                        signal=str(row["signal"]),
+                                        probability=float(row["probability"]),
+                                        entry_price=p0.price_open,
+                                        sl=p0.sl, tp=p0.tp, lot=p0.volume,
+                                        balance=balance,
+                                        adaptive=bool(load_symbol_artifacts(symbol)),
+                                    )
+                                    _open_positions_meta[p0.ticket] = {
+                                        "symbol": symbol,
+                                        "signal": str(row["signal"]),
+                                        "entry":  p0.price_open,
+                                        "sl": p0.sl, "tp": p0.tp,
+                                        "lot": p0.volume,
+                                        "entry_time": datetime.now(timezone.utc),
+                                    }
+                            except Exception as _ex:
+                                print(f"[TG] signal-notify error: {_ex}")
                 else:
                     print(f"    [DRY-RUN] {symbol} | Sinyal: {row['signal']} | Prob: {row['probability']:.2f} | Adaptive: {is_adaptive}")
                 
                 last_seen_bar[symbol] = bar_time
 
+            write_live_state("Active-Session (Trading)", best_pairs, "Siklus scan selesai, menunggu poll berikutnya.")
             time.sleep(settings.poll_seconds)
 
     except KeyboardInterrupt:
