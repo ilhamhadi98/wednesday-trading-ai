@@ -7,12 +7,24 @@ from datetime import datetime, timezone
 
 # ── Telegram notifications (non-blocking, aman jika gagal) ──────────────────
 try:
-    from trading_bot.telegram_notify import notify_signal, notify_trade_close
+    from trading_bot.telegram_notify import (
+        notify_signal, notify_trade_close,
+        notify_startup, notify_shutdown,
+        notify_session_change, notify_training_start,
+        notify_training_done, notify_quota_full, notify_error,
+    )
     _TG_ENABLED = True
 except Exception:
     _TG_ENABLED = False
     def notify_signal(*a, **kw): pass
     def notify_trade_close(*a, **kw): pass
+    def notify_startup(*a, **kw): pass
+    def notify_shutdown(*a, **kw): pass
+    def notify_session_change(*a, **kw): pass
+    def notify_training_start(*a, **kw): pass
+    def notify_training_done(*a, **kw): pass
+    def notify_quota_full(*a, **kw): pass
+    def notify_error(*a, **kw): pass
 
 from trading_bot.config import load_settings, OUTPUT_DIR
 from trading_bot.execution import DemoExecutor
@@ -96,33 +108,69 @@ def main():
     last_seen_bar        = {}
     first_time_trained   = set()
     # Tracking posisi terbuka untuk deteksi close
-    _open_positions_meta: dict = {}   # ticket -> {symbol, signal, entry, sl, tp, lot, entry_time, price_data}
+    _open_positions_meta: dict = {}   # ticket -> {symbol, signal, entry, sl, tp, lot, entry_time}
+    _last_session: str = ""           # untuk deteksi pergantian sesi
 
     try:
         client.connect()
+
+        # ── Notif: Bot menyala ────────────────────────────────
+        if _TG_ENABLED:
+            try:
+                acct = client.account_info()
+                bal  = acct.balance if acct else 0.0
+                srv  = acct.server  if (acct and hasattr(acct, "server")) else ""
+                notify_startup(
+                    pairs=best_pairs, top_n=args.top,
+                    execute_mode=args.execute,
+                    balance=bal, server=srv,
+                )
+            except Exception as _ex:
+                print(f"[TG] startup-notify error: {_ex}")
+
         while True:
             # Skenario 1: Di Luar Jam Trading (Sesi Asia / Sepi)
             if not is_trading_session():
                 msg = f"[{datetime.now(timezone.utc).strftime('%H:%M UTC')}] Di luar sesi aktif. AI masuk mode TRAINING & MONITORING..."
                 print(msg)
                 write_live_state("Off-Session (Training)", best_pairs, msg)
-                
-                # Biarkan AI berlatih (Transfer Learning) pada pair andalannya agar besok lebih pintar
+
+                # ── Notif: sesi berubah ke OFF (sekali saja) ────────────
+                if _TG_ENABLED and _last_session != "OFF":
+                    try:
+                        notify_session_change("OFF", best_pairs)
+                    except Exception: pass
+                _last_session = "OFF"
+
+                # Biarkan AI berlatih (Transfer Learning) pada pair andalannya
                 for sym in best_pairs:
                     if sym not in first_time_trained and not is_retraining(sym):
                         print(f" ⚙️ [TRAINING OFF-SESSION] Mempersiapkan model per-symbol untuk {sym}...")
+                        # ── Notif: training dimulai ──
+                        if _TG_ENABLED:
+                            try: notify_training_start(sym, reason="Off-session schedule")
+                            except Exception: pass
                         with _lock:
                             _retraining_in_progress.add(sym)
+                        def _train_with_notify(s=sym):
+                            try:
+                                _do_retrain(s, client, settings)
+                                if _TG_ENABLED:
+                                    try: notify_training_done(s, success=True)
+                                    except Exception: pass
+                            except Exception as _te:
+                                if _TG_ENABLED:
+                                    try: notify_training_done(s, success=False, detail=str(_te)[:200])
+                                    except Exception: pass
                         t = threading.Thread(
-                            target=_do_retrain,
-                            args=(sym, client, settings),
+                            target=_train_with_notify,
                             daemon=True,
                             name=f"train-off-{sym}"
                         )
                         t.start()
                         first_time_trained.add(sym)
                         time.sleep(5)  # Beri jeda antar spawn thread
-                
+
                 # Tidur lama karena pasar sedang sepi
                 time.sleep(15 * 60)
                 continue
@@ -131,6 +179,13 @@ def main():
             msg = f"[{datetime.now(timezone.utc).strftime('%H:%M UTC')}] Market Sesion Aktif! AI melakukan scanning ketat..."
             print(msg)
             write_live_state("Active-Session (Trading)", best_pairs, msg)
+
+            # ── Notif: sesi berubah ke AKTIF (sekali saja) ───────────
+            if _TG_ENABLED and _last_session != "ACTIVE":
+                try:
+                    notify_session_change("ACTIVE", best_pairs)
+                except Exception: pass
+            _last_session = "ACTIVE"
             
             df = scan_opportunities(
                 client=client,
@@ -217,6 +272,10 @@ def main():
                 if args.execute:
                     if signal != 0 and symbol not in active_symbols and len(active_symbols) >= settings.max_active_pairs:
                         print(f"    ⚠️ {symbol} Skip: Kuota MAX {settings.max_active_pairs} posisi sudah penuh.")
+                        # ── Notif: kuota penuh ──
+                        if _TG_ENABLED:
+                            try: notify_quota_full(symbol, settings.max_active_pairs, list(active_symbols))
+                            except Exception: pass
                         last_seen_bar[symbol] = bar_time
                         continue
 
@@ -266,6 +325,15 @@ def main():
 
     except KeyboardInterrupt:
         print("\n[SMART-LIVE] Sistem dihentikan oleh user.")
+        if _TG_ENABLED:
+            try: notify_shutdown(reason="Dihentikan manual oleh user (KeyboardInterrupt)")
+            except Exception: pass
+    except Exception as _fatal:
+        print(f"[SMART-LIVE] ERROR FATAL: {_fatal}")
+        if _TG_ENABLED:
+            try: notify_error("live_smart_session main loop", str(_fatal))
+            except Exception: pass
+        raise
     finally:
         client.shutdown()
 

@@ -50,6 +50,131 @@ def _send_photo(buf: io.BytesIO, caption: str) -> None:
 
 # ─── public API ─────────────────────────────────────────────────────────────
 
+def notify_startup(
+    pairs: list,
+    top_n: int,
+    execute_mode: bool,
+    balance: float,
+    server: str = "",
+) -> None:
+    """Notif saat bot pertama kali menyala."""
+    mode = "🔴 LIVE EXECUTE" if execute_mode else "🟡 DRY-RUN"
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    pairs_str = ", ".join(pairs[:15]) + (f" +{len(pairs)-15} lainnya" if len(pairs) > 15 else "")
+    text = (
+        f"<b>🚀 WednesdayAI MENYALA</b>\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"🕐 Waktu    : {now}\n"
+        f"⚙️  Mode     : {mode}\n"
+        f"📋 Top Pair : {top_n} pair\n"
+        f"💹 Pair     : {pairs_str}\n"
+        f"🏦 Balance  : ${balance:,.2f}\n"
+        f"🌐 Server   : {server or '-'}\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"Bot siap memantau pasar. Semangat! 💪"
+    )
+    _send_message(text)
+
+
+def notify_shutdown(reason: str = "User stopped") -> None:
+    """Notif saat bot berhenti."""
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    text = (
+        f"<b>🛑 WednesdayAI BERHENTI</b>\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"🕐 Waktu  : {now}\n"
+        f"📋 Alasan : {reason}\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"Bot tidak lagi aktif. Cek posisi terbuka di MT5!"
+    )
+    _send_message(text)
+
+
+def notify_session_change(new_session: str, active_pairs: list) -> None:
+    """Notif saat sesi trading berubah (aktif ↔ off-session)."""
+    now = datetime.now(timezone.utc).strftime("%H:%M UTC")
+    if new_session == "ACTIVE":
+        icon, label = "🟢", "SESI AKTIF — London & New York"
+        extra = "Bot mulai scanning sinyal trading."
+    else:
+        icon, label = "🌙", "OFF-SESSION — Pasar Sepi"
+        extra = "Bot masuk mode training & standby."
+    text = (
+        f"<b>{icon} {label}</b>\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"🕐 Waktu : {now}\n"
+        f"📊 Pair  : {len(active_pairs)} pair dipantau\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"{extra}"
+    )
+    _send_message(text)
+
+
+def notify_training_start(symbol: str, reason: str = "Off-session schedule") -> None:
+    """Notif saat training/retraining pair dimulai."""
+    now = datetime.now(timezone.utc).strftime("%H:%M UTC")
+    text = (
+        f"<b>⚙️ TRAINING DIMULAI — {symbol}</b>\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"🕐 Waktu  : {now}\n"
+        f"📋 Alasan : {reason}\n"
+        f"🤖 Status : Transfer Learning berjalan...\n"
+        f"━━━━━━━━━━━━━━━━━━"
+    )
+    _send_message(text)
+
+
+def notify_training_done(symbol: str, success: bool, detail: str = "") -> None:
+    """Notif saat training selesai atau gagal."""
+    now = datetime.now(timezone.utc).strftime("%H:%M UTC")
+    if success:
+        icon, label = "✅", "TRAINING SELESAI"
+        extra = detail or "Model baru siap digunakan pada sesi berikutnya."
+    else:
+        icon, label = "❌", "TRAINING GAGAL"
+        extra = detail or "Model lama tetap dipakai. Cek log untuk detail."
+    text = (
+        f"<b>{icon} {label} — {symbol}</b>\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"🕐 Waktu : {now}\n"
+        f"📋 Info  : {extra}\n"
+        f"━━━━━━━━━━━━━━━━━━"
+    )
+    _send_message(text)
+
+
+def notify_quota_full(symbol: str, max_pairs: int, active_symbols: list) -> None:
+    """Notif saat kuota posisi penuh dan ada sinyal yang di-skip."""
+    now = datetime.now(timezone.utc).strftime("%H:%M UTC")
+    active_str = ", ".join(active_symbols)
+    text = (
+        f"<b>⚠️ KUOTA POSISI PENUH</b>\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"🕐 Waktu      : {now}\n"
+        f"❌ Skip       : {symbol}\n"
+        f"📊 Maks       : {max_pairs} posisi bersamaan\n"
+        f"📋 Aktif      : {active_str}\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"Sinyal {symbol} dilewatkan karena kuota penuh."
+    )
+    _send_message(text)
+
+
+def notify_error(context: str, error_msg: str) -> None:
+    """Notif saat terjadi error kritis pada bot."""
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    text = (
+        f"<b>🚨 ERROR KRITIS</b>\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"🕐 Waktu   : {now}\n"
+        f"📋 Konteks : {context}\n"
+        f"❌ Error   : {str(error_msg)[:300]}\n"
+        f"━━━━━━━━━━━━━━━━━━\n"
+        f"Periksa log bot segera!"
+    )
+    _send_message(text)
+
+
 def notify_signal(
     symbol: str,
     signal: str,       # "BUY" / "SELL"
