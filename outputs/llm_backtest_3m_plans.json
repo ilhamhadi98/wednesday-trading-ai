@@ -1,0 +1,5490 @@
+[
+  {
+    "trade_id": 1,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-15 20:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8445,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.149451,
+      "sl": 1.146879,
+      "tp": 1.153309,
+      "lot": 0.01,
+      "sl_pips": 25.7,
+      "tp_pips": 38.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-15 21:05:47.838942+00:00",
+      "exit_price": 1.153309,
+      "reason": "TP",
+      "pnl": 3.858,
+      "balance_after": 103.858
+    }
+  },
+  {
+    "trade_id": 2,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-15 21:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8409,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.153189,
+      "sl": 1.15048,
+      "tp": 1.157254,
+      "lot": 0.01,
+      "sl_pips": 27.1,
+      "tp_pips": 40.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-15 21:50:47.838942+00:00",
+      "exit_price": 1.15048,
+      "reason": "SL",
+      "pnl": -2.7097,
+      "balance_after": 101.1483
+    }
+  },
+  {
+    "trade_id": 3,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-15 21:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7581,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6748092115323666,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5746534109285859,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8290254061502753,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150387,
+      "sl": 1.147304,
+      "tp": 1.155011,
+      "lot": 0.01,
+      "sl_pips": 30.8,
+      "tp_pips": 46.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 03:05:47.838942+00:00",
+      "exit_price": 1.147304,
+      "reason": "SL",
+      "pnl": -3.0828,
+      "balance_after": 98.0655
+    }
+  },
+  {
+    "trade_id": 4,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 03:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6326,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6370384384569575,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6154501419361054,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.5472633527441538,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150246,
+      "sl": 1.147443,
+      "tp": 1.154451,
+      "lot": 0.01,
+      "sl_pips": 28.0,
+      "tp_pips": 42.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 06:05:47.838942+00:00",
+      "exit_price": 1.147443,
+      "reason": "SL",
+      "pnl": -2.8034,
+      "balance_after": 95.2621
+    }
+  },
+  {
+    "trade_id": 5,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 06:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7127,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.5533069225708598,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6412410347916403,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8357133738091111,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148069,
+      "sl": 1.144584,
+      "tp": 1.153298,
+      "lot": 0.01,
+      "sl_pips": 34.9,
+      "tp_pips": 52.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 07:20:47.838942+00:00",
+      "exit_price": 1.144584,
+      "reason": "SL",
+      "pnl": -3.4858,
+      "balance_after": 91.7763
+    }
+  },
+  {
+    "trade_id": 6,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 07:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5263,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.5938399393952275,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.756470676735365,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7178518757668183,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.145711,
+      "sl": 1.14208,
+      "tp": 1.151157,
+      "lot": 0.01,
+      "sl_pips": 36.3,
+      "tp_pips": 54.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 13:35:47.838942+00:00",
+      "exit_price": 1.14208,
+      "reason": "SL",
+      "pnl": -3.6309,
+      "balance_after": 88.1454
+    }
+  },
+  {
+    "trade_id": 7,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 13:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6318,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6370384384569575,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6154501419361054,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.5472633527441538,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.145507,
+      "sl": 1.141589,
+      "tp": 1.151383,
+      "lot": 0.01,
+      "sl_pips": 39.2,
+      "tp_pips": 58.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 20:50:47.838942+00:00",
+      "exit_price": 1.151383,
+      "reason": "TP",
+      "pnl": 5.8761,
+      "balance_after": 94.0215
+    }
+  },
+  {
+    "trade_id": 8,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 20:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8285,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150285,
+      "sl": 1.147306,
+      "tp": 1.154752,
+      "lot": 0.01,
+      "sl_pips": 29.8,
+      "tp_pips": 44.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 21:20:47.838942+00:00",
+      "exit_price": 1.149893,
+      "reason": "REVERSE",
+      "pnl": -0.3916,
+      "balance_after": 93.6299
+    }
+  },
+  {
+    "trade_id": 9,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 21:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.1378,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.6711014384463724,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7711867014042111,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.7449147232122402,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.149893,
+      "sl": 1.153125,
+      "tp": 1.145045,
+      "lot": 0.01,
+      "sl_pips": 32.3,
+      "tp_pips": 48.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 21:35:47.838942+00:00",
+      "exit_price": 1.150303,
+      "reason": "REVERSE",
+      "pnl": -0.4094,
+      "balance_after": 93.2205
+    }
+  },
+  {
+    "trade_id": 10,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 21:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8094,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7938304599500896,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6059879605203169,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7532332962608422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150303,
+      "sl": 1.147259,
+      "tp": 1.154868,
+      "lot": 0.01,
+      "sl_pips": 30.4,
+      "tp_pips": 45.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-16 22:05:47.838942+00:00",
+      "exit_price": 1.147259,
+      "reason": "SL",
+      "pnl": -3.0436,
+      "balance_after": 90.1768
+    }
+  },
+  {
+    "trade_id": 11,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-16 22:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8284,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.149085,
+      "sl": 1.145681,
+      "tp": 1.154191,
+      "lot": 0.01,
+      "sl_pips": 34.0,
+      "tp_pips": 51.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 06:20:47.838942+00:00",
+      "exit_price": 1.154191,
+      "reason": "TP",
+      "pnl": 5.106,
+      "balance_after": 95.2828
+    }
+  },
+  {
+    "trade_id": 12,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 06:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8379,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.152858,
+      "sl": 1.150429,
+      "tp": 1.156502,
+      "lot": 0.01,
+      "sl_pips": 24.3,
+      "tp_pips": 36.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 08:50:47.838942+00:00",
+      "exit_price": 1.150429,
+      "reason": "SL",
+      "pnl": -2.4294,
+      "balance_after": 92.8534
+    }
+  },
+  {
+    "trade_id": 13,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 08:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7636,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6748092115323666,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5746534109285859,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8290254061502753,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150807,
+      "sl": 1.148522,
+      "tp": 1.154235,
+      "lot": 0.01,
+      "sl_pips": 22.9,
+      "tp_pips": 34.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 13:20:47.838942+00:00",
+      "exit_price": 1.148522,
+      "reason": "SL",
+      "pnl": -2.2854,
+      "balance_after": 90.568
+    }
+  },
+  {
+    "trade_id": 14,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 13:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8578,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6418856525519135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6273754174054512,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7417811431839422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148443,
+      "sl": 1.146142,
+      "tp": 1.151894,
+      "lot": 0.01,
+      "sl_pips": 23.0,
+      "tp_pips": 34.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 14:05:47.838942+00:00",
+      "exit_price": 1.151894,
+      "reason": "TP",
+      "pnl": 3.4513,
+      "balance_after": 94.0194
+    }
+  },
+  {
+    "trade_id": 15,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 14:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.856,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6418856525519135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6273754174054512,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7417811431839422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150404,
+      "sl": 1.14763,
+      "tp": 1.154564,
+      "lot": 0.01,
+      "sl_pips": 27.7,
+      "tp_pips": 41.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 14:50:47.838942+00:00",
+      "exit_price": 1.14763,
+      "reason": "SL",
+      "pnl": -2.7734,
+      "balance_after": 91.246
+    }
+  },
+  {
+    "trade_id": 16,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 15:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8536,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.149707,
+      "sl": 1.146892,
+      "tp": 1.153929,
+      "lot": 0.01,
+      "sl_pips": 28.1,
+      "tp_pips": 42.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 17:50:47.838942+00:00",
+      "exit_price": 1.153929,
+      "reason": "TP",
+      "pnl": 4.2222,
+      "balance_after": 95.4681
+    }
+  },
+  {
+    "trade_id": 17,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 18:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8517,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.15285,
+      "sl": 1.149782,
+      "tp": 1.157452,
+      "lot": 0.01,
+      "sl_pips": 30.7,
+      "tp_pips": 46.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 20:05:47.838942+00:00",
+      "exit_price": 1.15432,
+      "reason": "REVERSE",
+      "pnl": 1.4698,
+      "balance_after": 96.9379
+    }
+  },
+  {
+    "trade_id": 18,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 20:05:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.1169,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.586477715530234,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7361930148481985,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.6784162630437816,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.15432,
+      "sl": 1.15785,
+      "tp": 1.149024,
+      "lot": 0.01,
+      "sl_pips": 35.3,
+      "tp_pips": 53.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 20:20:47.838942+00:00",
+      "exit_price": 1.153213,
+      "reason": "REVERSE",
+      "pnl": 1.1065,
+      "balance_after": 98.0444
+    }
+  },
+  {
+    "trade_id": 19,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 20:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7468,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6150941004199066,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6033401955365225,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6169039131427145,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.153213,
+      "sl": 1.149786,
+      "tp": 1.158354,
+      "lot": 0.01,
+      "sl_pips": 34.3,
+      "tp_pips": 51.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-17 22:20:47.838942+00:00",
+      "exit_price": 1.149786,
+      "reason": "SL",
+      "pnl": -3.4275,
+      "balance_after": 94.6169
+    }
+  },
+  {
+    "trade_id": 20,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-17 22:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8253,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148504,
+      "sl": 1.145316,
+      "tp": 1.153285,
+      "lot": 0.01,
+      "sl_pips": 31.9,
+      "tp_pips": 47.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 02:50:47.838942+00:00",
+      "exit_price": 1.153285,
+      "reason": "TP",
+      "pnl": 4.7817,
+      "balance_after": 99.3986
+    }
+  },
+  {
+    "trade_id": 21,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 02:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.709,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.5533069225708598,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6412410347916403,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8357133738091111,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.153539,
+      "sl": 1.150585,
+      "tp": 1.15797,
+      "lot": 0.01,
+      "sl_pips": 29.5,
+      "tp_pips": 44.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 03:50:47.838942+00:00",
+      "exit_price": 1.150585,
+      "reason": "SL",
+      "pnl": -2.9538,
+      "balance_after": 96.4448
+    }
+  },
+  {
+    "trade_id": 22,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 03:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8295,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150817,
+      "sl": 1.148166,
+      "tp": 1.154793,
+      "lot": 0.01,
+      "sl_pips": 26.5,
+      "tp_pips": 39.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 04:20:47.838942+00:00",
+      "exit_price": 1.148166,
+      "reason": "SL",
+      "pnl": -2.6506,
+      "balance_after": 93.7942
+    }
+  },
+  {
+    "trade_id": 23,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 04:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6085,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6344357000908839,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7317156548485106,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.5852949573287404,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148475,
+      "sl": 1.14553,
+      "tp": 1.152894,
+      "lot": 0.01,
+      "sl_pips": 29.5,
+      "tp_pips": 44.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 07:20:47.838942+00:00",
+      "exit_price": 1.152894,
+      "reason": "TP",
+      "pnl": 4.4185,
+      "balance_after": 98.2127
+    }
+  },
+  {
+    "trade_id": 24,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 07:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8616,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6418856525519135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6273754174054512,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7417811431839422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.151837,
+      "sl": 1.148503,
+      "tp": 1.15684,
+      "lot": 0.01,
+      "sl_pips": 33.3,
+      "tp_pips": 50.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 08:50:47.838942+00:00",
+      "exit_price": 1.148503,
+      "reason": "SL",
+      "pnl": -3.3348,
+      "balance_after": 94.8778
+    }
+  },
+  {
+    "trade_id": 25,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 08:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8326,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148765,
+      "sl": 1.145593,
+      "tp": 1.153524,
+      "lot": 0.01,
+      "sl_pips": 31.7,
+      "tp_pips": 47.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 09:50:47.838942+00:00",
+      "exit_price": 1.153524,
+      "reason": "TP",
+      "pnl": 4.7589,
+      "balance_after": 99.6367
+    }
+  },
+  {
+    "trade_id": 26,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 09:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6544,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6145027366138784,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6638081294891066,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.534035320368858,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.152738,
+      "sl": 1.149402,
+      "tp": 1.157742,
+      "lot": 0.01,
+      "sl_pips": 33.4,
+      "tp_pips": 50.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 10:05:47.838942+00:00",
+      "exit_price": 1.153837,
+      "reason": "REVERSE",
+      "pnl": 1.0989,
+      "balance_after": 100.7356
+    }
+  },
+  {
+    "trade_id": 27,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 10:05:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.0845,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.766104045730958,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7360057425711122,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.7684175753941793,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.153837,
+      "sl": 1.157142,
+      "tp": 1.148878,
+      "lot": 0.01,
+      "sl_pips": 33.1,
+      "tp_pips": 49.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 10:50:47.838942+00:00",
+      "exit_price": 1.155278,
+      "reason": "REVERSE",
+      "pnl": -1.441,
+      "balance_after": 99.2946
+    }
+  },
+  {
+    "trade_id": 28,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 11:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.4138,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.7921320898066179,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6111205053674587,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.7573704901081368,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.157888,
+      "sl": 1.160794,
+      "tp": 1.153529,
+      "lot": 0.01,
+      "sl_pips": 29.1,
+      "tp_pips": 43.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 11:50:47.838942+00:00",
+      "exit_price": 1.156104,
+      "reason": "REVERSE",
+      "pnl": 1.7838,
+      "balance_after": 101.0784
+    }
+  },
+  {
+    "trade_id": 29,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 11:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7342,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.727079600416527,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7813031355594113,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7676510163538355,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.156104,
+      "sl": 1.153323,
+      "tp": 1.160276,
+      "lot": 0.01,
+      "sl_pips": 27.8,
+      "tp_pips": 41.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 12:20:47.838942+00:00",
+      "exit_price": 1.153323,
+      "reason": "SL",
+      "pnl": -2.7813,
+      "balance_after": 98.2971
+    }
+  },
+  {
+    "trade_id": 30,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 12:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7176,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.5837775607777972,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7095912365208412,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7889027810977575,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.154974,
+      "sl": 1.152079,
+      "tp": 1.159317,
+      "lot": 0.01,
+      "sl_pips": 29.0,
+      "tp_pips": 43.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 13:50:47.838942+00:00",
+      "exit_price": 1.156172,
+      "reason": "REVERSE",
+      "pnl": 1.1984,
+      "balance_after": 99.4955
+    }
+  },
+  {
+    "trade_id": 31,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 13:50:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.3219,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.5691009650260634,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7863312113331702,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5778973254637775,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.156172,
+      "sl": 1.159475,
+      "tp": 1.151218,
+      "lot": 0.01,
+      "sl_pips": 33.0,
+      "tp_pips": 49.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 14:05:47.838942+00:00",
+      "exit_price": 1.157039,
+      "reason": "REVERSE",
+      "pnl": -0.8668,
+      "balance_after": 98.6287
+    }
+  },
+  {
+    "trade_id": 32,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 14:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.3503,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.6882508629628183,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7247070463313435,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5629759179833274,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.157284,
+      "sl": 1.16027,
+      "tp": 1.152806,
+      "lot": 0.01,
+      "sl_pips": 29.9,
+      "tp_pips": 44.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 15:35:47.838942+00:00",
+      "exit_price": 1.155692,
+      "reason": "REVERSE",
+      "pnl": 1.5922,
+      "balance_after": 100.2209
+    }
+  },
+  {
+    "trade_id": 33,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 15:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6787,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7581351224960661,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7499020754315463,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6649410989798238,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.154903,
+      "sl": 1.151855,
+      "tp": 1.159475,
+      "lot": 0.01,
+      "sl_pips": 30.5,
+      "tp_pips": 45.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 19:50:47.838942+00:00",
+      "exit_price": 1.151855,
+      "reason": "SL",
+      "pnl": -3.0481,
+      "balance_after": 97.1727
+    }
+  },
+  {
+    "trade_id": 34,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 19:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8149,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7938304599500896,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6059879605203169,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7532332962608422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.152751,
+      "sl": 1.149223,
+      "tp": 1.158043,
+      "lot": 0.01,
+      "sl_pips": 35.3,
+      "tp_pips": 52.9
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 22:50:47.838942+00:00",
+      "exit_price": 1.158043,
+      "reason": "TP",
+      "pnl": 5.2915,
+      "balance_after": 102.4642
+    }
+  },
+  {
+    "trade_id": 35,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 22:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8407,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.157473,
+      "sl": 1.154182,
+      "tp": 1.16241,
+      "lot": 0.01,
+      "sl_pips": 32.9,
+      "tp_pips": 49.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-18 23:05:47.838942+00:00",
+      "exit_price": 1.15796,
+      "reason": "REVERSE",
+      "pnl": 0.4867,
+      "balance_after": 102.9509
+    }
+  },
+  {
+    "trade_id": 36,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-18 23:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.4309,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.6751449838571204,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7080775793971119,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5567973690510579,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.158924,
+      "sl": 1.162407,
+      "tp": 1.153699,
+      "lot": 0.01,
+      "sl_pips": 34.8,
+      "tp_pips": 52.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-19 00:20:47.838942+00:00",
+      "exit_price": 1.162407,
+      "reason": "SL",
+      "pnl": -3.4832,
+      "balance_after": 99.4677
+    }
+  },
+  {
+    "trade_id": 37,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-19 00:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.0694,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.5988958806418685,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7583334011211946,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.7014664383104762,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.161589,
+      "sl": 1.16495,
+      "tp": 1.156548,
+      "lot": 0.01,
+      "sl_pips": 33.6,
+      "tp_pips": 50.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-19 00:50:47.838942+00:00",
+      "exit_price": 1.159731,
+      "reason": "REVERSE",
+      "pnl": 1.8576,
+      "balance_after": 101.3253
+    }
+  },
+  {
+    "trade_id": 38,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-19 00:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6854,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7125732171923468,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6725573761924517,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6833506634535955,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.159731,
+      "sl": 1.156555,
+      "tp": 1.164497,
+      "lot": 0.01,
+      "sl_pips": 31.8,
+      "tp_pips": 47.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-19 05:50:47.838942+00:00",
+      "exit_price": 1.156555,
+      "reason": "SL",
+      "pnl": -3.1768,
+      "balance_after": 98.1485
+    }
+  },
+  {
+    "trade_id": 39,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-19 05:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8162,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6572105313656902,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7001174637981893,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8119314721987774,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.157806,
+      "sl": 1.15512,
+      "tp": 1.161836,
+      "lot": 0.01,
+      "sl_pips": 26.9,
+      "tp_pips": 40.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-19 07:05:47.838942+00:00",
+      "exit_price": 1.161836,
+      "reason": "TP",
+      "pnl": 4.0299,
+      "balance_after": 102.1784
+    }
+  },
+  {
+    "trade_id": 40,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-19 07:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8096,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7938304599500896,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6059879605203169,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7532332962608422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.160445,
+      "sl": 1.15753,
+      "tp": 1.164818,
+      "lot": 0.01,
+      "sl_pips": 29.2,
+      "tp_pips": 43.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-19 07:35:47.838942+00:00",
+      "exit_price": 1.15753,
+      "reason": "SL",
+      "pnl": -2.9154,
+      "balance_after": 99.263
+    }
+  },
+  {
+    "trade_id": 41,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-19 08:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7622,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6748092115323666,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5746534109285859,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8290254061502753,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.157145,
+      "sl": 1.15433,
+      "tp": 1.161367,
+      "lot": 0.01,
+      "sl_pips": 28.1,
+      "tp_pips": 42.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-19 09:05:47.838942+00:00",
+      "exit_price": 1.15433,
+      "reason": "SL",
+      "pnl": -2.8148,
+      "balance_after": 96.4482
+    }
+  },
+  {
+    "trade_id": 42,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-19 09:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6312,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6370384384569575,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6154501419361054,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.5472633527441538,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.154589,
+      "sl": 1.151433,
+      "tp": 1.159323,
+      "lot": 0.01,
+      "sl_pips": 31.6,
+      "tp_pips": 47.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-19 21:20:47.838942+00:00",
+      "exit_price": 1.151433,
+      "reason": "SL",
+      "pnl": -3.156,
+      "balance_after": 93.2922
+    }
+  },
+  {
+    "trade_id": 43,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-19 22:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7014,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6174931731588523,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6631135971885938,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6120389669905929,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.151722,
+      "sl": 1.148866,
+      "tp": 1.156005,
+      "lot": 0.01,
+      "sl_pips": 28.6,
+      "tp_pips": 42.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 01:35:47.838942+00:00",
+      "exit_price": 1.148866,
+      "reason": "SL",
+      "pnl": -2.8554,
+      "balance_after": 90.4367
+    }
+  },
+  {
+    "trade_id": 44,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 01:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8192,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6572105313656902,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7001174637981893,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8119314721987774,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150009,
+      "sl": 1.146686,
+      "tp": 1.154994,
+      "lot": 0.01,
+      "sl_pips": 33.2,
+      "tp_pips": 49.9
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 07:05:47.838942+00:00",
+      "exit_price": 1.146686,
+      "reason": "SL",
+      "pnl": -3.3235,
+      "balance_after": 87.1133
+    }
+  },
+  {
+    "trade_id": 45,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 07:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8289,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.146508,
+      "sl": 1.143353,
+      "tp": 1.151241,
+      "lot": 0.01,
+      "sl_pips": 31.6,
+      "tp_pips": 47.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 09:20:47.838942+00:00",
+      "exit_price": 1.151241,
+      "reason": "TP",
+      "pnl": 4.7332,
+      "balance_after": 91.8464
+    }
+  },
+  {
+    "trade_id": 46,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 09:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.834,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.149697,
+      "sl": 1.146585,
+      "tp": 1.154366,
+      "lot": 0.01,
+      "sl_pips": 31.1,
+      "tp_pips": 46.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 11:05:47.838942+00:00",
+      "exit_price": 1.146585,
+      "reason": "SL",
+      "pnl": -3.1125,
+      "balance_after": 88.734
+    }
+  },
+  {
+    "trade_id": 47,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 11:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8453,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148323,
+      "sl": 1.145321,
+      "tp": 1.152828,
+      "lot": 0.01,
+      "sl_pips": 30.0,
+      "tp_pips": 45.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 12:50:47.838942+00:00",
+      "exit_price": 1.145321,
+      "reason": "SL",
+      "pnl": -3.0028,
+      "balance_after": 85.7312
+    }
+  },
+  {
+    "trade_id": 48,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 12:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8439,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.146959,
+      "sl": 1.143778,
+      "tp": 1.151731,
+      "lot": 0.01,
+      "sl_pips": 31.8,
+      "tp_pips": 47.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 13:50:47.838942+00:00",
+      "exit_price": 1.143778,
+      "reason": "SL",
+      "pnl": -3.1811,
+      "balance_after": 82.5501
+    }
+  },
+  {
+    "trade_id": 49,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 13:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5917,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7503379397231558,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5889485704179067,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7979320412921349,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.144998,
+      "sl": 1.141925,
+      "tp": 1.149608,
+      "lot": 0.01,
+      "sl_pips": 30.7,
+      "tp_pips": 46.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 14:35:47.838942+00:00",
+      "exit_price": 1.141925,
+      "reason": "SL",
+      "pnl": -3.0732,
+      "balance_after": 79.4769
+    }
+  },
+  {
+    "trade_id": 50,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 14:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5668,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6349593691206135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7710873993854451,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.739002792621045,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.145128,
+      "sl": 1.141654,
+      "tp": 1.150338,
+      "lot": 0.01,
+      "sl_pips": 34.7,
+      "tp_pips": 52.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 17:50:47.838942+00:00",
+      "exit_price": 1.141654,
+      "reason": "SL",
+      "pnl": -3.4735,
+      "balance_after": 76.0034
+    }
+  },
+  {
+    "trade_id": 51,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 17:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5897,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7503379397231558,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5889485704179067,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7979320412921349,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.142222,
+      "sl": 1.139271,
+      "tp": 1.146649,
+      "lot": 0.01,
+      "sl_pips": 29.5,
+      "tp_pips": 44.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 20:05:47.838942+00:00",
+      "exit_price": 1.146649,
+      "reason": "TP",
+      "pnl": 4.4265,
+      "balance_after": 80.4299
+    }
+  },
+  {
+    "trade_id": 52,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 20:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.851,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.146178,
+      "sl": 1.143558,
+      "tp": 1.150109,
+      "lot": 0.01,
+      "sl_pips": 26.2,
+      "tp_pips": 39.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 21:50:47.838942+00:00",
+      "exit_price": 1.143558,
+      "reason": "SL",
+      "pnl": -2.6202,
+      "balance_after": 77.8097
+    }
+  },
+  {
+    "trade_id": 53,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 21:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8615,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6418856525519135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6273754174054512,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7417811431839422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.14393,
+      "sl": 1.141168,
+      "tp": 1.148072,
+      "lot": 0.01,
+      "sl_pips": 27.6,
+      "tp_pips": 41.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-20 22:35:47.838942+00:00",
+      "exit_price": 1.141168,
+      "reason": "SL",
+      "pnl": -2.7613,
+      "balance_after": 75.0484
+    }
+  },
+  {
+    "trade_id": 54,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-20 23:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5939,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7503379397231558,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5889485704179067,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7979320412921349,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.140513,
+      "sl": 1.137959,
+      "tp": 1.144345,
+      "lot": 0.01,
+      "sl_pips": 25.5,
+      "tp_pips": 38.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 00:05:47.838942+00:00",
+      "exit_price": 1.144345,
+      "reason": "TP",
+      "pnl": 3.8315,
+      "balance_after": 78.8799
+    }
+  },
+  {
+    "trade_id": 55,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 00:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8075,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7938304599500896,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6059879605203169,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7532332962608422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.144894,
+      "sl": 1.142066,
+      "tp": 1.149136,
+      "lot": 0.01,
+      "sl_pips": 28.3,
+      "tp_pips": 42.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 06:20:47.838942+00:00",
+      "exit_price": 1.142066,
+      "reason": "SL",
+      "pnl": -2.8279,
+      "balance_after": 76.0519
+    }
+  },
+  {
+    "trade_id": 56,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 06:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8504,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.142918,
+      "sl": 1.139631,
+      "tp": 1.147848,
+      "lot": 0.01,
+      "sl_pips": 32.9,
+      "tp_pips": 49.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 08:50:47.838942+00:00",
+      "exit_price": 1.147848,
+      "reason": "TP",
+      "pnl": 4.9304,
+      "balance_after": 80.9824
+    }
+  },
+  {
+    "trade_id": 57,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 08:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8467,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.145817,
+      "sl": 1.142807,
+      "tp": 1.150331,
+      "lot": 0.01,
+      "sl_pips": 30.1,
+      "tp_pips": 45.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 09:05:47.838942+00:00",
+      "exit_price": 1.145974,
+      "reason": "REVERSE",
+      "pnl": 0.1577,
+      "balance_after": 81.14
+    }
+  },
+  {
+    "trade_id": 58,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 09:05:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.28,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.7251713301724515,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6918011407721102,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.8379119340652013,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.145974,
+      "sl": 1.149069,
+      "tp": 1.141333,
+      "lot": 0.01,
+      "sl_pips": 30.9,
+      "tp_pips": 46.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 09:20:47.838942+00:00",
+      "exit_price": 1.145327,
+      "reason": "REVERSE",
+      "pnl": 0.6472,
+      "balance_after": 81.7873
+    }
+  },
+  {
+    "trade_id": 59,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 09:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8075,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7938304599500896,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6059879605203169,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7532332962608422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.145327,
+      "sl": 1.142327,
+      "tp": 1.149827,
+      "lot": 0.01,
+      "sl_pips": 30.0,
+      "tp_pips": 45.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 10:20:47.838942+00:00",
+      "exit_price": 1.142327,
+      "reason": "SL",
+      "pnl": -2.9999,
+      "balance_after": 78.7873
+    }
+  },
+  {
+    "trade_id": 60,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 10:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.758,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6748092115323666,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5746534109285859,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8290254061502753,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.144714,
+      "sl": 1.141415,
+      "tp": 1.149663,
+      "lot": 0.01,
+      "sl_pips": 33.0,
+      "tp_pips": 49.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 14:20:47.838942+00:00",
+      "exit_price": 1.149663,
+      "reason": "TP",
+      "pnl": 4.9486,
+      "balance_after": 83.736
+    }
+  },
+  {
+    "trade_id": 61,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 14:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8329,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148786,
+      "sl": 1.145726,
+      "tp": 1.153377,
+      "lot": 0.01,
+      "sl_pips": 30.6,
+      "tp_pips": 45.9
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 14:35:47.838942+00:00",
+      "exit_price": 1.14927,
+      "reason": "REVERSE",
+      "pnl": 0.4837,
+      "balance_after": 84.2197
+    }
+  },
+  {
+    "trade_id": 62,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 14:35:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.2614,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.5945163572740115,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7947717366980924,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.604912248756657,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.14927,
+      "sl": 1.15218,
+      "tp": 1.144904,
+      "lot": 0.01,
+      "sl_pips": 29.1,
+      "tp_pips": 43.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 14:50:47.838942+00:00",
+      "exit_price": 1.148454,
+      "reason": "REVERSE",
+      "pnl": 0.8154,
+      "balance_after": 85.0351
+    }
+  },
+  {
+    "trade_id": 63,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 14:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8365,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148454,
+      "sl": 1.145492,
+      "tp": 1.152898,
+      "lot": 0.01,
+      "sl_pips": 29.6,
+      "tp_pips": 44.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 16:35:47.838942+00:00",
+      "exit_price": 1.145492,
+      "reason": "SL",
+      "pnl": -2.9626,
+      "balance_after": 82.0725
+    }
+  },
+  {
+    "trade_id": 64,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 16:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8645,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6418856525519135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6273754174054512,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7417811431839422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148357,
+      "sl": 1.145394,
+      "tp": 1.152803,
+      "lot": 0.01,
+      "sl_pips": 29.6,
+      "tp_pips": 44.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 16:50:47.838942+00:00",
+      "exit_price": 1.145394,
+      "reason": "SL",
+      "pnl": -2.9635,
+      "balance_after": 79.109
+    }
+  },
+  {
+    "trade_id": 65,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 16:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8312,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.146724,
+      "sl": 1.143566,
+      "tp": 1.15146,
+      "lot": 0.01,
+      "sl_pips": 31.6,
+      "tp_pips": 47.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 20:50:47.838942+00:00",
+      "exit_price": 1.15146,
+      "reason": "TP",
+      "pnl": 4.736,
+      "balance_after": 83.845
+    }
+  },
+  {
+    "trade_id": 66,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 20:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8385,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.151084,
+      "sl": 1.148351,
+      "tp": 1.155182,
+      "lot": 0.01,
+      "sl_pips": 27.3,
+      "tp_pips": 41.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 22:20:47.838942+00:00",
+      "exit_price": 1.148351,
+      "reason": "SL",
+      "pnl": -2.7322,
+      "balance_after": 81.1128
+    }
+  },
+  {
+    "trade_id": 67,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 22:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8542,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.149386,
+      "sl": 1.146628,
+      "tp": 1.153523,
+      "lot": 0.01,
+      "sl_pips": 27.6,
+      "tp_pips": 41.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-21 23:20:47.838942+00:00",
+      "exit_price": 1.146628,
+      "reason": "SL",
+      "pnl": -2.7579,
+      "balance_after": 78.3548
+    }
+  },
+  {
+    "trade_id": 68,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-21 23:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7217,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.5837775607777972,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7095912365208412,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7889027810977575,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.146861,
+      "sl": 1.144185,
+      "tp": 1.150877,
+      "lot": 0.01,
+      "sl_pips": 26.8,
+      "tp_pips": 40.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 01:05:47.838942+00:00",
+      "exit_price": 1.150877,
+      "reason": "TP",
+      "pnl": 4.0152,
+      "balance_after": 82.3701
+    }
+  },
+  {
+    "trade_id": 69,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 01:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8363,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150995,
+      "sl": 1.148476,
+      "tp": 1.154773,
+      "lot": 0.01,
+      "sl_pips": 25.2,
+      "tp_pips": 37.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 01:35:47.838942+00:00",
+      "exit_price": 1.148476,
+      "reason": "SL",
+      "pnl": -2.5191,
+      "balance_after": 79.8509
+    }
+  },
+  {
+    "trade_id": 70,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 01:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8341,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.148795,
+      "sl": 1.146226,
+      "tp": 1.15265,
+      "lot": 0.01,
+      "sl_pips": 25.7,
+      "tp_pips": 38.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 03:35:47.838942+00:00",
+      "exit_price": 1.146226,
+      "reason": "SL",
+      "pnl": -2.5695,
+      "balance_after": 77.2814
+    }
+  },
+  {
+    "trade_id": 71,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 03:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8643,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6418856525519135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6273754174054512,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7417811431839422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.146816,
+      "sl": 1.144153,
+      "tp": 1.150811,
+      "lot": 0.01,
+      "sl_pips": 26.6,
+      "tp_pips": 39.9
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 04:50:47.838942+00:00",
+      "exit_price": 1.150811,
+      "reason": "TP",
+      "pnl": 3.9948,
+      "balance_after": 81.2762
+    }
+  },
+  {
+    "trade_id": 72,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 04:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.862,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6418856525519135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6273754174054512,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7417811431839422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.150823,
+      "sl": 1.14792,
+      "tp": 1.155177,
+      "lot": 0.01,
+      "sl_pips": 29.0,
+      "tp_pips": 43.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 06:20:47.838942+00:00",
+      "exit_price": 1.152329,
+      "reason": "REVERSE",
+      "pnl": 1.506,
+      "balance_after": 82.7822
+    }
+  },
+  {
+    "trade_id": 73,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 06:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.281,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.7251713301724515,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6918011407721102,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.8379119340652013,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.152329,
+      "sl": 1.155355,
+      "tp": 1.14779,
+      "lot": 0.01,
+      "sl_pips": 30.3,
+      "tp_pips": 45.4
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 06:35:47.838942+00:00",
+      "exit_price": 1.153644,
+      "reason": "REVERSE",
+      "pnl": -1.3152,
+      "balance_after": 81.467
+    }
+  },
+  {
+    "trade_id": 74,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 06:50:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.2858,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.5695028673873084,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6317524628352152,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.728439573423603,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.154593,
+      "sl": 1.157572,
+      "tp": 1.150126,
+      "lot": 0.01,
+      "sl_pips": 29.8,
+      "tp_pips": 44.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 07:50:47.838942+00:00",
+      "exit_price": 1.157572,
+      "reason": "SL",
+      "pnl": -2.9784,
+      "balance_after": 78.4886
+    }
+  },
+  {
+    "trade_id": 75,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 07:50:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.3548,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.6882508629628183,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7247070463313435,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5629759179833274,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.157783,
+      "sl": 1.160752,
+      "tp": 1.15333,
+      "lot": 0.01,
+      "sl_pips": 29.7,
+      "tp_pips": 44.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 08:50:47.838942+00:00",
+      "exit_price": 1.160752,
+      "reason": "SL",
+      "pnl": -2.969,
+      "balance_after": 75.5196
+    }
+  },
+  {
+    "trade_id": 76,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 08:50:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.3466,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.6882508629628183,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7247070463313435,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5629759179833274,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.160263,
+      "sl": 1.16327,
+      "tp": 1.155751,
+      "lot": 0.01,
+      "sl_pips": 30.1,
+      "tp_pips": 45.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 09:20:47.838942+00:00",
+      "exit_price": 1.157726,
+      "reason": "REVERSE",
+      "pnl": 2.5367,
+      "balance_after": 78.0562
+    }
+  },
+  {
+    "trade_id": 77,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 09:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5659,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6349593691206135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7710873993854451,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.739002792621045,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.157726,
+      "sl": 1.154785,
+      "tp": 1.162136,
+      "lot": 0.01,
+      "sl_pips": 29.4,
+      "tp_pips": 44.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 10:05:47.838942+00:00",
+      "exit_price": 1.154785,
+      "reason": "SL",
+      "pnl": -2.9404,
+      "balance_after": 75.1159
+    }
+  },
+  {
+    "trade_id": 78,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 10:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6864,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7125732171923468,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6725573761924517,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6833506634535955,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.155856,
+      "sl": 1.152788,
+      "tp": 1.160457,
+      "lot": 0.01,
+      "sl_pips": 30.7,
+      "tp_pips": 46.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 18:05:47.838942+00:00",
+      "exit_price": 1.160457,
+      "reason": "TP",
+      "pnl": 4.6013,
+      "balance_after": 79.7171
+    }
+  },
+  {
+    "trade_id": 79,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 18:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8229,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6572105313656902,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7001174637981893,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8119314721987774,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.160492,
+      "sl": 1.157844,
+      "tp": 1.164465,
+      "lot": 0.01,
+      "sl_pips": 26.5,
+      "tp_pips": 39.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 19:35:47.838942+00:00",
+      "exit_price": 1.157844,
+      "reason": "SL",
+      "pnl": -2.6481,
+      "balance_after": 77.069
+    }
+  },
+  {
+    "trade_id": 80,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 19:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5267,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.5938399393952275,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.756470676735365,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7178518757668183,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.158678,
+      "sl": 1.155884,
+      "tp": 1.162867,
+      "lot": 0.01,
+      "sl_pips": 27.9,
+      "tp_pips": 41.9
+    },
+    "outcome": {
+      "exit_time": "2026-02-22 21:05:47.838942+00:00",
+      "exit_price": 1.155884,
+      "reason": "SL",
+      "pnl": -2.7932,
+      "balance_after": 74.2758
+    }
+  },
+  {
+    "trade_id": 81,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-22 21:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8284,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.158991,
+      "sl": 1.155849,
+      "tp": 1.163706,
+      "lot": 0.01,
+      "sl_pips": 31.4,
+      "tp_pips": 47.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 01:35:47.838942+00:00",
+      "exit_price": 1.163706,
+      "reason": "TP",
+      "pnl": 4.7142,
+      "balance_after": 78.9901
+    }
+  },
+  {
+    "trade_id": 82,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 01:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.805,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7938304599500896,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6059879605203169,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7532332962608422,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.162438,
+      "sl": 1.159205,
+      "tp": 1.167287,
+      "lot": 0.01,
+      "sl_pips": 32.3,
+      "tp_pips": 48.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 04:20:47.838942+00:00",
+      "exit_price": 1.167287,
+      "reason": "TP",
+      "pnl": 4.8492,
+      "balance_after": 83.8392
+    }
+  },
+  {
+    "trade_id": 83,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 04:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6973,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6174931731588523,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6631135971885938,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6120389669905929,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.168073,
+      "sl": 1.165433,
+      "tp": 1.172033,
+      "lot": 0.01,
+      "sl_pips": 26.4,
+      "tp_pips": 39.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 04:35:47.838942+00:00",
+      "exit_price": 1.165433,
+      "reason": "SL",
+      "pnl": -2.64,
+      "balance_after": 81.1993
+    }
+  },
+  {
+    "trade_id": 84,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 04:35:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.3919,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.5870574210027397,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6065840106605447,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5083290325786489,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.16719,
+      "sl": 1.170382,
+      "tp": 1.162401,
+      "lot": 0.01,
+      "sl_pips": 31.9,
+      "tp_pips": 47.9
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 04:50:47.838942+00:00",
+      "exit_price": 1.166833,
+      "reason": "REVERSE",
+      "pnl": 0.3565,
+      "balance_after": 81.5558
+    }
+  },
+  {
+    "trade_id": 85,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 05:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7608,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6748092115323666,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5746534109285859,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8290254061502753,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.169035,
+      "sl": 1.166119,
+      "tp": 1.17341,
+      "lot": 0.01,
+      "sl_pips": 29.2,
+      "tp_pips": 43.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 07:50:47.838942+00:00",
+      "exit_price": 1.172281,
+      "reason": "REVERSE",
+      "pnl": 3.2455,
+      "balance_after": 84.8013
+    }
+  },
+  {
+    "trade_id": 86,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 07:50:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.2772,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.7251713301724515,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6918011407721102,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.8379119340652013,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.172281,
+      "sl": 1.175032,
+      "tp": 1.168155,
+      "lot": 0.01,
+      "sl_pips": 27.5,
+      "tp_pips": 41.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 08:20:47.838942+00:00",
+      "exit_price": 1.175032,
+      "reason": "SL",
+      "pnl": -2.751,
+      "balance_after": 82.0504
+    }
+  },
+  {
+    "trade_id": 87,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 08:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6547,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6145027366138784,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6638081294891066,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.534035320368858,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.174371,
+      "sl": 1.171438,
+      "tp": 1.178771,
+      "lot": 0.01,
+      "sl_pips": 29.3,
+      "tp_pips": 44.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 08:35:47.838942+00:00",
+      "exit_price": 1.17384,
+      "reason": "REVERSE",
+      "pnl": -0.5306,
+      "balance_after": 81.5198
+    }
+  },
+  {
+    "trade_id": 88,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 08:35:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.3521,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.6882508629628183,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7247070463313435,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5629759179833274,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.17384,
+      "sl": 1.176834,
+      "tp": 1.16935,
+      "lot": 0.01,
+      "sl_pips": 29.9,
+      "tp_pips": 44.9
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 08:50:47.838942+00:00",
+      "exit_price": 1.174507,
+      "reason": "REVERSE",
+      "pnl": -0.6665,
+      "balance_after": 80.8533
+    }
+  },
+  {
+    "trade_id": 89,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 08:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5436,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7288238957201064,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7449513409885291,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7075458546375872,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.174507,
+      "sl": 1.171566,
+      "tp": 1.178919,
+      "lot": 0.01,
+      "sl_pips": 29.4,
+      "tp_pips": 44.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 10:20:47.838942+00:00",
+      "exit_price": 1.176488,
+      "reason": "REVERSE",
+      "pnl": 1.981,
+      "balance_after": 82.8343
+    }
+  },
+  {
+    "trade_id": 90,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 10:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.3966,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.7738744375977586,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6465428529869761,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.7934784244424573,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.176488,
+      "sl": 1.179227,
+      "tp": 1.172379,
+      "lot": 0.01,
+      "sl_pips": 27.4,
+      "tp_pips": 41.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 10:50:47.838942+00:00",
+      "exit_price": 1.174921,
+      "reason": "REVERSE",
+      "pnl": 1.567,
+      "balance_after": 84.4013
+    }
+  },
+  {
+    "trade_id": 91,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 10:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5653,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6349593691206135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7710873993854451,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.739002792621045,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.174921,
+      "sl": 1.171981,
+      "tp": 1.179332,
+      "lot": 0.01,
+      "sl_pips": 29.4,
+      "tp_pips": 44.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 11:35:47.838942+00:00",
+      "exit_price": 1.171981,
+      "reason": "SL",
+      "pnl": -2.9405,
+      "balance_after": 81.4609
+    }
+  },
+  {
+    "trade_id": 92,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 12:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5683,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6349593691206135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7710873993854451,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.739002792621045,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.17475,
+      "sl": 1.171775,
+      "tp": 1.179211,
+      "lot": 0.01,
+      "sl_pips": 29.7,
+      "tp_pips": 44.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 13:50:47.838942+00:00",
+      "exit_price": 1.171775,
+      "reason": "SL",
+      "pnl": -2.9745,
+      "balance_after": 78.4864
+    }
+  },
+  {
+    "trade_id": 93,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 14:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8184,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6572105313656902,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7001174637981893,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8119314721987774,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.173366,
+      "sl": 1.170522,
+      "tp": 1.177631,
+      "lot": 0.01,
+      "sl_pips": 28.4,
+      "tp_pips": 42.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 18:05:47.838942+00:00",
+      "exit_price": 1.177631,
+      "reason": "TP",
+      "pnl": 4.2651,
+      "balance_after": 82.7515
+    }
+  },
+  {
+    "trade_id": 94,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 18:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8474,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6868766364675813,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5668542818720075,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6222992793360302,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.176512,
+      "sl": 1.173557,
+      "tp": 1.180945,
+      "lot": 0.01,
+      "sl_pips": 29.6,
+      "tp_pips": 44.3
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 19:05:47.838942+00:00",
+      "exit_price": 1.173557,
+      "reason": "SL",
+      "pnl": -2.9552,
+      "balance_after": 79.7963
+    }
+  },
+  {
+    "trade_id": 95,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 19:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8413,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.174607,
+      "sl": 1.171529,
+      "tp": 1.179223,
+      "lot": 0.01,
+      "sl_pips": 30.8,
+      "tp_pips": 46.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 21:05:47.838942+00:00",
+      "exit_price": 1.171529,
+      "reason": "SL",
+      "pnl": -3.0775,
+      "balance_after": 76.7188
+    }
+  },
+  {
+    "trade_id": 96,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 21:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7388,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.712328995973476,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6449581626062637,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7436916993720123,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.172287,
+      "sl": 1.16949,
+      "tp": 1.176482,
+      "lot": 0.01,
+      "sl_pips": 28.0,
+      "tp_pips": 42.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-23 22:50:47.838942+00:00",
+      "exit_price": 1.16949,
+      "reason": "SL",
+      "pnl": -2.7967,
+      "balance_after": 73.9221
+    }
+  },
+  {
+    "trade_id": 97,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-23 23:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7284,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.727079600416527,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7813031355594113,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7676510163538355,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.169591,
+      "sl": 1.166272,
+      "tp": 1.17457,
+      "lot": 0.01,
+      "sl_pips": 33.2,
+      "tp_pips": 49.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 01:50:47.838942+00:00",
+      "exit_price": 1.166272,
+      "reason": "SL",
+      "pnl": -3.3191,
+      "balance_after": 70.603
+    }
+  },
+  {
+    "trade_id": 98,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 01:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.5647,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7939264044823166,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5800171842701388,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.539294146599109,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.166216,
+      "sl": 1.163016,
+      "tp": 1.171015,
+      "lot": 0.01,
+      "sl_pips": 32.0,
+      "tp_pips": 48.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 05:35:47.838942+00:00",
+      "exit_price": 1.171015,
+      "reason": "TP",
+      "pnl": 4.7996,
+      "balance_after": 75.4026
+    }
+  },
+  {
+    "trade_id": 99,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 05:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7552,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6748092115323666,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5746534109285859,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8290254061502753,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.171726,
+      "sl": 1.169113,
+      "tp": 1.175647,
+      "lot": 0.01,
+      "sl_pips": 26.1,
+      "tp_pips": 39.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 09:05:47.838942+00:00",
+      "exit_price": 1.169113,
+      "reason": "SL",
+      "pnl": -2.6134,
+      "balance_after": 72.7892
+    }
+  },
+  {
+    "trade_id": 100,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 09:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.835,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.170905,
+      "sl": 1.167731,
+      "tp": 1.175665,
+      "lot": 0.01,
+      "sl_pips": 31.7,
+      "tp_pips": 47.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 10:35:47.838942+00:00",
+      "exit_price": 1.175665,
+      "reason": "TP",
+      "pnl": 4.7603,
+      "balance_after": 77.5495
+    }
+  },
+  {
+    "trade_id": 101,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 10:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8421,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7162708884663593,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7170688130164626,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7030885310665468,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.174275,
+      "sl": 1.171245,
+      "tp": 1.178821,
+      "lot": 0.01,
+      "sl_pips": 30.3,
+      "tp_pips": 45.5
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 10:50:47.838942+00:00",
+      "exit_price": 1.17309,
+      "reason": "REVERSE",
+      "pnl": -1.1854,
+      "balance_after": 76.3642
+    }
+  },
+  {
+    "trade_id": 102,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 10:50:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.154,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.7315344980767355,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.6768279755317019,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.8207919649254898,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.17309,
+      "sl": 1.176128,
+      "tp": 1.168533,
+      "lot": 0.01,
+      "sl_pips": 30.4,
+      "tp_pips": 45.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 11:05:47.838942+00:00",
+      "exit_price": 1.174435,
+      "reason": "REVERSE",
+      "pnl": -1.3449,
+      "balance_after": 75.0193
+    }
+  },
+  {
+    "trade_id": 103,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 11:05:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.8339,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7375677185568388,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6095358762141738,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7370922536941731,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.174435,
+      "sl": 1.171381,
+      "tp": 1.179015,
+      "lot": 0.01,
+      "sl_pips": 30.5,
+      "tp_pips": 45.8
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 11:35:47.838942+00:00",
+      "exit_price": 1.175754,
+      "reason": "REVERSE",
+      "pnl": 1.3193,
+      "balance_after": 76.3386
+    }
+  },
+  {
+    "trade_id": 104,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 11:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7405,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.712328995973476,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6449581626062637,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7436916993720123,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.174564,
+      "sl": 1.171484,
+      "tp": 1.179185,
+      "lot": 0.01,
+      "sl_pips": 30.8,
+      "tp_pips": 46.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 12:20:47.838942+00:00",
+      "exit_price": 1.176003,
+      "reason": "REVERSE",
+      "pnl": 1.4387,
+      "balance_after": 77.7773
+    }
+  },
+  {
+    "trade_id": 105,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 12:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7621,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6748092115323666,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.5746534109285859,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.8290254061502753,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.177357,
+      "sl": 1.174246,
+      "tp": 1.182024,
+      "lot": 0.01,
+      "sl_pips": 31.1,
+      "tp_pips": 46.7
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 13:35:47.838942+00:00",
+      "exit_price": 1.174246,
+      "reason": "SL",
+      "pnl": -3.1111,
+      "balance_after": 74.6662
+    }
+  },
+  {
+    "trade_id": 106,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 13:35:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.7299,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.727079600416527,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7813031355594113,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.7676510163538355,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.175247,
+      "sl": 1.172182,
+      "tp": 1.179844,
+      "lot": 0.01,
+      "sl_pips": 30.7,
+      "tp_pips": 46.0
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 14:20:47.838942+00:00",
+      "exit_price": 1.178763,
+      "reason": "REVERSE",
+      "pnl": 3.5162,
+      "balance_after": 78.1824
+    }
+  },
+  {
+    "trade_id": 107,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 14:20:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.332,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.6240631715258871,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.7287061746227113,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.638791179708555,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.178763,
+      "sl": 1.181776,
+      "tp": 1.174243,
+      "lot": 0.01,
+      "sl_pips": 30.1,
+      "tp_pips": 45.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 14:50:47.838942+00:00",
+      "exit_price": 1.178724,
+      "reason": "REVERSE",
+      "pnl": 0.0393,
+      "balance_after": 78.2217
+    }
+  },
+  {
+    "trade_id": 108,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 14:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6095,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6344357000908839,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7317156548485106,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.5852949573287404,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.178724,
+      "sl": 1.175951,
+      "tp": 1.182882,
+      "lot": 0.01,
+      "sl_pips": 27.7,
+      "tp_pips": 41.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 15:35:47.838942+00:00",
+      "exit_price": 1.175951,
+      "reason": "SL",
+      "pnl": -2.7725,
+      "balance_after": 75.4492
+    }
+  },
+  {
+    "trade_id": 109,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 15:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.566,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6349593691206135,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.7710873993854451,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.739002792621045,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.17802,
+      "sl": 1.175114,
+      "tp": 1.182378,
+      "lot": 0.01,
+      "sl_pips": 29.1,
+      "tp_pips": 43.6
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 16:05:47.838942+00:00",
+      "exit_price": 1.177888,
+      "reason": "REVERSE",
+      "pnl": -0.1317,
+      "balance_after": 75.3175
+    }
+  },
+  {
+    "trade_id": 110,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 16:05:47.838942+00:00",
+    "lstm_signal": "SELL",
+    "lstm_probability": 0.2196,
+    "llm_news": {
+      "sentiment": "BEARISH",
+      "confidence": 0.7793078347608895,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BEARISH",
+      "confidence": 0.5631757758125138,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "SELL",
+      "confidence": 0.5507052262982491,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] SELL signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.177888,
+      "sl": 1.180961,
+      "tp": 1.173279,
+      "lot": 0.01,
+      "sl_pips": 30.7,
+      "tp_pips": 46.1
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 16:50:47.838942+00:00",
+      "exit_price": 1.180361,
+      "reason": "REVERSE",
+      "pnl": -2.4731,
+      "balance_after": 72.8444
+    }
+  },
+  {
+    "trade_id": 111,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 19:20:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.6903,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.7125732171923468,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6725573761924517,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6833506634535955,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.179935,
+      "sl": 1.177455,
+      "tp": 1.183653,
+      "lot": 0.01,
+      "sl_pips": 24.8,
+      "tp_pips": 37.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-24 19:50:47.838942+00:00",
+      "exit_price": 1.177455,
+      "reason": "SL",
+      "pnl": -2.4792,
+      "balance_after": 70.3652
+    }
+  },
+  {
+    "trade_id": 112,
+    "symbol": "EURUSD",
+    "entry_time": "2026-02-24 19:50:47.838942+00:00",
+    "lstm_signal": "BUY",
+    "lstm_probability": 0.701,
+    "llm_news": {
+      "sentiment": "BULLISH",
+      "confidence": 0.6174931731588523,
+      "reasoning": "[MOCK] Simulated news sentiment.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_tech": {
+      "view": "BULLISH",
+      "confidence": 0.6631135971885938,
+      "support": null,
+      "resistance": null,
+      "suggested_sl_pips": null,
+      "suggested_tp_pips": null,
+      "reasoning": "[MOCK] Simulated technical view.",
+      "model": "mock",
+      "error": null
+    },
+    "llm_decision": {
+      "decision": "BUY",
+      "confidence": 0.6120389669905929,
+      "risk_reward_ratio": 1.5,
+      "entry_rationale": "[MOCK] BUY signal based on simulated analysis.",
+      "risk_warning": "",
+      "model": "mock",
+      "error": null
+    },
+    "execution": {
+      "entry_price": 1.178425,
+      "sl": 1.175479,
+      "tp": 1.182844,
+      "lot": 0.01,
+      "sl_pips": 29.5,
+      "tp_pips": 44.2
+    },
+    "outcome": {
+      "exit_time": "2026-02-25 03:05:47.838942+00:00",
+      "exit_price": 1.175479,
+      "reason": "SL",
+      "pnl": -2.9459,
+      "balance_after": 67.4192
+    }
+  }
+]

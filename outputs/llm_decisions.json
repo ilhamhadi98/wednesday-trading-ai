@@ -1,0 +1,98 @@
+[
+  {
+    "symbol": "EURUSD",
+    "ml_signal": "SELL",
+    "ml_probability": 0.5774520205356947,
+    "indicators": {
+      "rsi": 43.84625918215559,
+      "macd": -0.0008336791706271551,
+      "macd_signal": -0.0008685684450297176,
+      "atr": 0.001695836684600378,
+      "adx": 13.524000163327694,
+      "bb_upper": 1.0815493480381244,
+      "bb_lower": 1.0767889940240636,
+      "ema_fast": 1.0792985741331478,
+      "ema_slow": 1.0809887456612821
+    },
+    "news": {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.7,
+      "reasoning": "24h and 7-day changes are slightly negative, but RSI(14) is near the 50 neutral level, indicating no clear directional bias.",
+      "model": "mistral:7b",
+      "error": null
+    },
+    "technical": {
+      "view": "BEARISH",
+      "confidence": 0.65,
+      "support": 1.07679,
+      "resistance": 1.08099,
+      "suggested_sl_pips": 16.96,
+      "suggested_tp_pips": 33.92,
+      "reasoning": "The price is trading below the EMA_slow and within the lower Bollinger Band, indicating bearish momentum. The RSI is neutral but supports the bearish view with the price action below key moving averages.",
+      "model": "qwen2.5:14b",
+      "error": null
+    },
+    "decision": {
+      "decision": "HOLD",
+      "confidence": 0.6,
+      "risk_reward_ratio": null,
+      "entry_rationale": "Signals are mixed with ML suggesting SELL and TA indicating BEARISH, but sentiment is neutral. Confluence is not strong enough to justify entry.",
+      "risk_warning": "Potential for further downward movement despite mixed signals; sentiment could shift.",
+      "model": "deepseek-r1:14b",
+      "error": null
+    },
+    "llm_decision": "HOLD",
+    "llm_confidence": 0.6,
+    "elapsed_seconds": 109.0,
+    "timestamp": "2026-03-13T23:42:14.363656",
+    "dry_run": true
+  },
+  {
+    "symbol": "XAUUSD",
+    "ml_signal": "HOLD",
+    "ml_probability": 0.4673029452826126,
+    "indicators": {
+      "rsi": 40.415435148244335,
+      "macd": -0.8279913677042714,
+      "macd_signal": 0.12475989422178288,
+      "atr": 2.762969393547497,
+      "adx": 22.399945316739686,
+      "bb_upper": 2319.5954713490455,
+      "bb_lower": 2304.2974298343197,
+      "ema_fast": 2309.956976664422,
+      "ema_slow": 2310.651810902128
+    },
+    "news": {
+      "sentiment": "NEUTRAL",
+      "confidence": 0.7,
+      "reasoning": "24h and 7-day changes are slightly negative, but the RSI(14) is below 70, indicating no overbought conditions.",
+      "model": "mistral:7b",
+      "error": null
+    },
+    "technical": {
+      "view": "NEUTRAL",
+      "confidence": 0.6,
+      "support": 2304.0,
+      "resistance": 2310.0,
+      "suggested_sl_pips": 5.0,
+      "suggested_tp_pips": 10.0,
+      "reasoning": "The price is consolidating within a narrow range, with the RSI indicating a neutral to slightly bearish sentiment. The MACD is bearish, but the ADX is low, suggesting lack of strong trend direction.",
+      "model": "qwen2.5:14b",
+      "error": null
+    },
+    "decision": {
+      "decision": "HOLD",
+      "confidence": 0.6,
+      "risk_reward_ratio": 2.0,
+      "entry_rationale": "ML model, news sentiment, and technical analysis all suggest a neutral to slightly bearish outlook. The confluence of signals is weak, and the risk-reward ratio does not meet the required threshold for a confident entry.",
+      "risk_warning": "The market is in a consolidation phase with low volatility, and the signals are conflicting. There is a risk of missing a potential trend if the market starts to move.",
+      "model": "deepseek-r1:14b",
+      "error": null
+    },
+    "llm_decision": "HOLD",
+    "llm_confidence": 0.6,
+    "elapsed_seconds": 100.1,
+    "timestamp": "2026-03-13T23:43:54.491017",
+    "dry_run": true
+  }
+]

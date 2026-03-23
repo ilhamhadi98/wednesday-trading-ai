@@ -1,0 +1,386 @@
+[
+  {
+    "time": "2026-02-15 23:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -253.5,
+    "pnl_usd": -2.53,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 01:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 397.0,
+    "pnl_usd": 3.97,
+    "reason": "TP",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 04:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -280.7,
+    "pnl_usd": -2.81,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 06:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -285.2,
+    "pnl_usd": -2.85,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 09:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -278.9,
+    "pnl_usd": -2.79,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 11:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 292.4,
+    "pnl_usd": 2.92,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 12:50:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": -3.2,
+    "pnl_usd": -0.03,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 13:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -293.8,
+    "pnl_usd": -2.94,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 16:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 249.2,
+    "pnl_usd": 2.49,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 16:50:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": -9.3,
+    "pnl_usd": -0.09,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 17:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 135.9,
+    "pnl_usd": 1.36,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 18:20:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": 78.8,
+    "pnl_usd": 0.79,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 20:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -299.9,
+    "pnl_usd": -3.0,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 22:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 271.3,
+    "pnl_usd": 2.71,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-16 22:35:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": -50.6,
+    "pnl_usd": -0.51,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-17 01:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 493.3,
+    "pnl_usd": 4.93,
+    "reason": "TP",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-17 03:05:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": -300.5,
+    "pnl_usd": -3.01,
+    "reason": "SL",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-17 05:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -266.3,
+    "pnl_usd": -2.66,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-17 16:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 436.3,
+    "pnl_usd": 4.36,
+    "reason": "TP",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-17 18:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -306.8,
+    "pnl_usd": -3.07,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-17 20:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -284.5,
+    "pnl_usd": -2.85,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-17 21:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -266.3,
+    "pnl_usd": -2.66,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 00:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -301.2,
+    "pnl_usd": -3.01,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 01:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -308.7,
+    "pnl_usd": -3.09,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 09:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -319.0,
+    "pnl_usd": -3.19,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 11:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 464.2,
+    "pnl_usd": 4.64,
+    "reason": "TP",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 15:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 128.8,
+    "pnl_usd": 1.29,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 16:20:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": 63.0,
+    "pnl_usd": 0.63,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 16:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 164.2,
+    "pnl_usd": 1.64,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 17:50:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": -7.0,
+    "pnl_usd": -0.07,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 18:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 100.1,
+    "pnl_usd": 1.0,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 20:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -1.9,
+    "pnl_usd": -0.02,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 21:05:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": 19.8,
+    "pnl_usd": 0.2,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-18 23:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -264.5,
+    "pnl_usd": -2.64,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 12:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 377.1,
+    "pnl_usd": 3.77,
+    "reason": "TP",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 14:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -278.0,
+    "pnl_usd": -2.78,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 16:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 423.7,
+    "pnl_usd": 4.24,
+    "reason": "TP",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 17:20:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -276.4,
+    "pnl_usd": -2.76,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 19:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -314.7,
+    "pnl_usd": -3.15,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 20:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -304.9,
+    "pnl_usd": -3.05,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 22:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": 228.0,
+    "pnl_usd": 2.28,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 22:20:37.039938+00:00",
+    "side": "SELL",
+    "pnl_pips": -160.7,
+    "pnl_usd": -1.61,
+    "reason": "REVERSE",
+    "rationale": "[MOCK] SELL signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 22:50:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -370.3,
+    "pnl_usd": -3.7,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-19 23:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -371.1,
+    "pnl_usd": -3.71,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-20 03:35:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -404.9,
+    "pnl_usd": -4.05,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-20 05:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -336.4,
+    "pnl_usd": -3.36,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-20 07:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -341.7,
+    "pnl_usd": -3.42,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  },
+  {
+    "time": "2026-02-20 08:05:37.039938+00:00",
+    "side": "BUY",
+    "pnl_pips": -299.3,
+    "pnl_usd": -2.99,
+    "reason": "SL",
+    "rationale": "[MOCK] BUY signal based on simulated analysis."
+  }
+]

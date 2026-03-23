@@ -1,0 +1,42 @@
+{
+  "symbols": [
+    "EURUSD"
+  ],
+  "backtest_fast_tf": "M15",
+  "backtest_slow_tf": "H1",
+  "period_months": 1,
+  "period_start_utc": "2026-02-15 08:20:47.140593+00:00",
+  "period_end_utc": "2026-03-15 08:20:47.140593+00:00",
+  "initial_balance": 100.0,
+  "per_symbol": [
+    {
+      "symbol": "EURUSD",
+      "backtest_fast_tf": "M15",
+      "backtest_slow_tf": "H1",
+      "period_months": 1,
+      "period_start_utc": "2026-02-15 08:20:47.140593+00:00",
+      "period_end_utc": "2026-03-15 08:20:47.140593+00:00",
+      "initial_balance": 100.0,
+      "final_balance": 67.4192,
+      "net_profit": -32.5808,
+      "return_pct": -32.58,
+      "total_trades": 112,
+      "wins": 46,
+      "losses": 66,
+      "win_rate": 0.4107,
+      "avg_win": 3.0349,
+      "avg_loss": -2.6089,
+      "gross_profit": 139.6042,
+      "gross_loss": 172.185,
+      "profit_factor": 0.8108,
+      "llm_avg_confidence": 0.636,
+      "llm_filtered_trades": 52,
+      "llm_agreed_win_rate": 0.4107,
+      "llm_filter_rate_pct": 31.7
+    }
+  ],
+  "llm_mode": "mock",
+  "news_model": "mistral:7b",
+  "tech_model": "qwen2.5:14b",
+  "decision_model": "deepseek-r1:14b"
+}
